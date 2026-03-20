@@ -1,0 +1,19 @@
+{
+  "_comment": "TODO: Develop improved data viz palettes. Standard WB brand colors do not work well for data visualization.",
+  "sequential": {
+    "_comment": "TODO: Single-hue and multi-hue sequential palettes for continuous data / choropleths"
+  },
+  "diverging": {
+    "_comment": "TODO: Diverging palettes for data with a meaningful midpoint (e.g. change, surplus/deficit)"
+  },
+  "categorical": {
+    "_comment": "TODO: 6-8 color categorical palette for discrete comparisons. Must be colorblind-safe.",
+    "default": []
+  },
+  "status": {
+    "_comment": "TODO: Semantic colors for positive/negative/neutral indicators in chart contexts",
+    "positive": "",
+    "negative": "",
+    "neutral": ""
+  }
+}
