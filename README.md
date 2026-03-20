@@ -69,7 +69,7 @@ For programmatic use, import the JSON token files:
 | Design Guide — Typography | Done |
 | Design Guide — Layout & Spacing | Done |
 | Design Guide — Components | Done |
-| Data Viz — Palettes | **TODO** |
+| Data Viz — Palettes | Done (UK Gov Analysis Function) |
 | Data Viz — Chart Guidelines | **TODO** |
 | Icons | Done |
 

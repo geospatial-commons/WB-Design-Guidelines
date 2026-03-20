@@ -1,19 +1,64 @@
 {
-  "_comment": "TODO: Develop improved data viz palettes. Standard WB brand colors do not work well for data visualization.",
-  "sequential": {
-    "_comment": "TODO: Single-hue and multi-hue sequential palettes for continuous data / choropleths"
-  },
-  "diverging": {
-    "_comment": "TODO: Diverging palettes for data with a meaningful midpoint (e.g. change, surplus/deficit)"
-  },
+  "_source": "UK Government Analysis Function — Data visualisation: colours in charts",
+  "_url": "https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-colours-in-charts/",
+  "_notes": "Use in order. Limit categorical to 4 colors where possible. Never rely on color alone.",
+
   "categorical": {
-    "_comment": "TODO: 6-8 color categorical palette for discrete comparisons. Must be colorblind-safe.",
-    "default": []
+    "_usage": "Named groups and categories in bar, line, pie charts. Use colors in order.",
+    "_limit": "4 colors recommended maximum",
+    "colors": [
+      { "name": "Dark blue",    "hex": "#12436D", "rgb": [18, 67, 109],    "order": 1 },
+      { "name": "Turquoise",    "hex": "#28A197", "rgb": [40, 161, 151],   "order": 2 },
+      { "name": "Dark pink",    "hex": "#801650", "rgb": [128, 22, 80],    "order": 3 },
+      { "name": "Orange",       "hex": "#F46A25", "rgb": [244, 106, 37],   "order": 4 },
+      { "name": "Dark grey",    "hex": "#3D3D3D", "rgb": [61, 61, 61],     "order": 5, "note": "Use sparingly" },
+      { "name": "Light purple", "hex": "#A285D1", "rgb": [162, 133, 209],  "order": 6, "note": "Use sparingly" }
+    ]
   },
-  "status": {
-    "_comment": "TODO: Semantic colors for positive/negative/neutral indicators in chart contexts",
-    "positive": "",
-    "negative": "",
-    "neutral": ""
+
+  "duo": {
+    "_usage": "Two-series charts only — highest contrast pair from categorical palette",
+    "colors": [
+      { "name": "Dark blue", "hex": "#12436D", "rgb": [18, 67, 109] },
+      { "name": "Orange",    "hex": "#F46A25", "rgb": [244, 106, 37] }
+    ]
+  },
+
+  "sequential": {
+    "_usage": "Ordered/continuous data — choropleths, heatmaps, magnitude-based bar charts. Darkest = highest value.",
+    "_steps": {
+      "2": ["#12436D", "#6BACE6"],
+      "3": ["#12436D", "#2073BC", "#6BACE6"],
+      "4": ["#092135", "#12436D", "#2073BC", "#6BACE6"],
+      "5": ["#092135", "#12436D", "#2073BC", "#6BACE6", "#ADD1F1"]
+    },
+    "colors": [
+      { "name": "Darkest blue",  "hex": "#092135", "rgb": [9, 33, 53] },
+      { "name": "Dark blue",     "hex": "#12436D", "rgb": [18, 67, 109] },
+      { "name": "Mid blue",      "hex": "#2073BC", "rgb": [32, 115, 188] },
+      { "name": "Light blue",    "hex": "#6BACE6", "rgb": [107, 172, 230] },
+      { "name": "Lightest blue", "hex": "#ADD1F1", "rgb": [173, 209, 241] }
+    ],
+    "null_value": { "name": "Pale grey", "hex": "#F2F2F2", "rgb": [242, 242, 242], "note": "Null / suppressed / no data only" }
+  },
+
+  "focus": {
+    "_usage": "Highlight one series while de-emphasizing all others",
+    "active":     { "name": "Dark blue", "hex": "#12436D", "rgb": [18, 67, 109] },
+    "background": { "name": "Grey",      "hex": "#BFBFBF", "rgb": [191, 191, 191] }
+  },
+
+  "rag": {
+    "_usage": "Status tables and KPI scorecards only — not for charts",
+    "red":   { "hex": "#C00000", "rgb": [192, 0, 0],   "text": "#FFFFFF" },
+    "amber": { "hex": "#FFC000", "rgb": [255, 192, 0],  "text": "#000000" },
+    "green": { "hex": "#8ED973", "rgb": [142, 217, 115], "text": "#000000" }
+  },
+
+  "furniture": {
+    "_usage": "Chart axes, gridlines, and backgrounds",
+    "gridlines":   { "hex": "#D9D9D9", "rgb": [217, 217, 217] },
+    "axis-labels": { "hex": "#595959", "rgb": [89, 89, 89] },
+    "background":  { "hex": "#FFFFFF", "rgb": [255, 255, 255] }
   }
 }
