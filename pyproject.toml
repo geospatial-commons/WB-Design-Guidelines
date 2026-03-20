@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wb-design-guidelines"
+version = "1.0.0"
+description = "World Bank Design Guidelines"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "CC-BY-4.0"}
+authors = [
+    {name = "World Bank"}
+]
+keywords = ["world-bank", "design", "guidelines", "documentation", "jupyter-book"]
+
+dependencies = [
+    "jupyter-book>=1.0,<2.0",
+    "sphinx-book-theme>=1.0,<2.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "sphinx-autobuild",
+]
+
+[tool.setuptools]
+packages = []

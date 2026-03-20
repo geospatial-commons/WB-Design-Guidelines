@@ -1,0 +1,230 @@
+/* World Bank Corporate Colors - Knowledge Management Palette */
+
+/* Hide the "auto" theme option - only show light/dark */
+.theme-switch-button[data-theme="auto"],
+button[data-theme="auto"],
+.bd-theme-switcher button:nth-child(3) {
+    display: none !important;
+}
+
+/* ============================================
+   LIGHT MODE (default)
+   ============================================ */
+html[data-theme="light"], :root {
+    /* Corporate/Knowledge Management Colors */
+    --wb-corporate: #004972;
+    --wb-corporate-90: #195B80;
+    --wb-corporate-80: #336D8E;
+    --wb-corporate-70: #4C809C;
+    --wb-corporate-60: #6692AA;
+    --wb-corporate-50: #80A4B8;
+    --wb-corporate-40: #99B6C7;
+    --wb-corporate-30: #B2C8D5;
+    --wb-corporate-20: #CCDBE3;
+    --wb-corporate-10: #E5EDF1;
+
+    /* Digital Colors (accent/secondary) */
+    --wb-digital: #5D6472;
+    --wb-digital-90: #6B7481;
+    --wb-digital-80: #7C848F;
+
+    /* Override PyData Sphinx Theme colors */
+    --pst-color-primary: #004972;
+    --pst-color-secondary: #336D8E;
+    --pst-color-link: #004972;
+    --pst-color-link-hover: #195B80;
+    --pst-color-table-row-hover-bg: #CCDBE3;
+
+    /* Sidebar background - light mode */
+    --pst-color-background-secondary: #E5EDF1;
+}
+
+/* ============================================
+   DARK MODE
+   ============================================ */
+html[data-theme="dark"] {
+    /* Use lighter tints for dark mode visibility */
+    --wb-corporate: #6692AA;
+    --wb-corporate-90: #80A4B8;
+    --wb-corporate-80: #99B6C7;
+
+    /* Override PyData Sphinx Theme colors for dark mode */
+    --pst-color-primary: #6692AA;
+    --pst-color-secondary: #80A4B8;
+    --pst-color-link: #80A4B8;
+    --pst-color-link-hover: #99B6C7;
+    --pst-color-table-row-hover-bg: #2a3a4a;
+
+    /* Sidebar background - dark mode (dark blue instead of default) */
+    --pst-color-background-secondary: #1a2a3a;
+}
+
+/* Dark mode sidebar styling */
+html[data-theme="dark"] .bd-sidebar-primary {
+    background-color: #1a2a3a;
+}
+
+html[data-theme="dark"] .bd-sidebar-primary .nav-link {
+    color: #99B6C7;
+}
+
+html[data-theme="dark"] .bd-sidebar-primary .nav-link:hover {
+    color: #CCDBE3;
+    background-color: #2a3a4a;
+}
+
+html[data-theme="dark"] .bd-sidebar-primary .nav-link.active {
+    color: #E5EDF1;
+    font-weight: 600;
+    background-color: #004972;
+}
+
+html[data-theme="dark"] h1,
+html[data-theme="dark"] h2,
+html[data-theme="dark"] h3,
+html[data-theme="dark"] h4,
+html[data-theme="dark"] h5,
+html[data-theme="dark"] h6 {
+    color: #99B6C7;
+}
+
+html[data-theme="dark"] .bd-header {
+    background-color: #002040 !important;
+    border-bottom: 3px solid #004972;
+}
+
+html[data-theme="dark"] th {
+    background-color: #1a2a3a;
+    color: #99B6C7;
+}
+
+html[data-theme="dark"] .bd-footer {
+    background-color: #1a2a3a;
+    border-top: 1px solid #004972;
+}
+
+/* ============================================
+   COMMON STYLES (both modes)
+   ============================================ */
+
+/* Logo sizing - responsive: 150px max on desktop, 60px min on mobile */
+.navbar-brand .logo__image {
+    height: clamp(60px, 15vw, 150px) !important;
+    width: auto !important;
+}
+
+/* Import Open Sans font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+/* Font family - Open Sans with fallbacks */
+body {
+    font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #004972;
+}
+
+/* Primary sidebar styling - light mode */
+.bd-sidebar-primary {
+    background-color: #E5EDF1;
+}
+
+/* Sidebar navigation links */
+.bd-sidebar-primary .nav-link {
+    color: #004972;
+}
+
+.bd-sidebar-primary .nav-link:hover {
+    color: #195B80;
+    background-color: #CCDBE3;
+}
+
+.bd-sidebar-primary .nav-link.active {
+    color: #004972;
+    font-weight: 600;
+    background-color: #B2C8D5;
+}
+
+/* Header/navbar */
+.bd-header {
+    background-color: #004972 !important;
+    border-bottom: 3px solid #336D8E;
+}
+
+.bd-header .navbar-brand {
+    color: white !important;
+}
+
+/* Links */
+a {
+    color: #004972;
+}
+
+a:hover {
+    color: #195B80;
+}
+
+/* Table of contents on the right */
+.bd-toc a {
+    color: #5D6472;
+}
+
+.bd-toc a:hover {
+    color: #004972;
+}
+
+/* Buttons and interactive elements */
+.btn-primary {
+    background-color: #004972;
+    border-color: #004972;
+}
+
+.btn-primary:hover {
+    background-color: #195B80;
+    border-color: #195B80;
+}
+
+/* Admonitions/callouts */
+.admonition {
+    border-left-color: #004972;
+}
+
+.admonition.tip {
+    border-left-color: #4C809C;
+}
+
+.admonition.note {
+    border-left-color: #6692AA;
+}
+
+/* Code blocks */
+.highlight {
+    border-left: 3px solid #80A4B8;
+}
+
+/* Footer */
+.bd-footer {
+    background-color: #E5EDF1;
+    border-top: 1px solid #B2C8D5;
+}
+
+/* Tables */
+table {
+    border-color: #B2C8D5;
+}
+
+th {
+    background-color: #E5EDF1;
+    color: #004972;
+}
+
+table a:visited {
+    color: var(--pst-color-link);
+}
+
+table a:hover {
+    color: var(--pst-color-link-hover);
+}

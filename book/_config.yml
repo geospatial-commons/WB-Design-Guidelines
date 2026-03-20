@@ -1,0 +1,62 @@
+# Book settings
+title: World Bank Design Guidelines
+author: World Bank
+logo: images/WBG_Globe-RGB.png
+copyright: "2026"
+
+# Disable notebook execution (documentation-only book)
+execute:
+  execute_notebooks: "off"
+
+# Define the name of the latex output file for PDF builds
+latex:
+  latex_documents:
+    targetname: wb-design-guidelines.tex
+
+# Add a bibtex file so that we can create citations
+bibtex_bibfiles:
+  - references.bib
+
+# Information about where the book exists on the web
+repository:
+  url: https://github.com/worldbank/wb-design-guidelines
+  branch: main
+
+# Add GitHub buttons to your book
+html:
+  use_issues_button: false
+  use_repository_button: false
+  use_edit_page_button: false
+  home_page_in_navbar: true
+  extra_footer: |
+    <p>World Bank Design Guidelines</p>
+
+# Launch button settings
+launch_buttons:
+  notebook_interface: classic
+  thebe: false
+
+# Sphinx settings
+sphinx:
+  config:
+    html_theme: sphinx_book_theme
+    html_static_path:
+      - _static
+    html_css_files:
+      - custom.css
+    html_theme_options:
+      navigation_with_keys: false
+      logo:
+        text: "World Bank Design Guidelines"
+      pygments_light_style: tango
+      pygments_dark_style: monokai
+
+# Build optimization
+only_build_toc_files: true
+
+# Exclude patterns for cleaner builds
+exclude_patterns:
+  - _build
+  - Thumbs.db
+  - .DS_Store
+  - "**.ipynb_checkpoints"
