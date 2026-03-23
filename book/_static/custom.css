@@ -228,3 +228,34 @@ table a:visited {
 table a:hover {
     color: var(--pst-color-link-hover);
 }
+
+/* ============================================
+   SEARCH
+   ============================================ */
+#pst-search-input:focus,
+input[type="search"]:focus {
+    border-color: #004972 !important;
+    outline: 2px solid rgba(0, 73, 114, 0.25) !important;
+    outline-offset: 1px;
+}
+
+.search-button__default-icon {
+    color: #004972;
+}
+
+/* ============================================
+   COLOR SWATCHES
+   ============================================ */
+.wb-swatch {
+    transition: transform 100ms, box-shadow 100ms;
+}
+
+.wb-swatch:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15) !important;
+}
+
+.wb-swatch:focus-visible {
+    outline: 2px solid #004972;
+    outline-offset: 2px;
+}

@@ -4,14 +4,10 @@ root: intro
 parts:
   - caption: Design System
     chapters:
-      - file: chapters/colors
-      - file: chapters/typography
-      - file: chapters/layout-and-spacing
-      - file: chapters/components
+      - file: chapters/design-system
   - caption: Data Visualization
     chapters:
-      - file: chapters/palettes
-      - file: chapters/chart-guidelines
+      - file: chapters/data-viz
   - caption: Icons
     chapters:
       - file: chapters/icons

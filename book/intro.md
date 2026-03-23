@@ -18,25 +18,16 @@ A reference for anyone building WB-branded digital products — whether that's a
 
 ## Guide Structure
 
-### Design System
+- **{doc}`chapters/design-system`** — Colors (core palette, RAG, vertical brand), typography, layout & spacing, components
+- **{doc}`chapters/data-viz`** — Data visualization color palettes (categorical, sequential, RAG, chart furniture) and chart guidelines
+- **{doc}`chapters/icons`** — WB logos, scorecard icons, OCHA humanitarian icon sets
 
-1. **{doc}`chapters/colors`** — Core dashboard palette, WB vertical brand colors, accessibility notes
-2. **{doc}`chapters/typography`** — Open Sans, type scale, usage rules
-3. **{doc}`chapters/layout-and-spacing`** — Spacing scale, dashboard shell, responsive breakpoints
-4. **{doc}`chapters/components`** — Nav bar, sidebar, KPI cards, tables, filters, maps, charts
-
-### Data Visualization
-
-5. **{doc}`chapters/palettes`** — Categorical, sequential, focus, and RAG palettes (UK Gov Analysis Function)
-6. **{doc}`chapters/chart-guidelines`** — Axes, gridlines, legends, tooltips, annotations, maps
-
-### Icons
-
-7. **{doc}`chapters/icons`** — WB logos, scorecard icons, OCHA humanitarian icon sets
-
-## Getting Started
-
-Navigate to {doc}`chapters/colors` to begin, or jump to the section most relevant to your work.
+<div style="margin-top:24px;">
+  <a href="chapters/design-system.html"
+     style="background:#004972;color:white;border-radius:4px;padding:8px 16px;font-size:13px;font-family:'Open Sans',sans-serif;font-weight:600;text-decoration:none;display:inline-block;">
+    Start with Design System →
+  </a>
+</div>
 
 ## Contact
 
