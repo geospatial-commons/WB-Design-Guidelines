@@ -20,6 +20,7 @@ A reference for anyone building WB-branded digital products — whether that's a
 
 - **{doc}`chapters/design-system`** — Colors (core palette, RAG, vertical brand), typography, layout & spacing, components
 - **{doc}`chapters/data-viz`** — Data visualization color palettes (categorical, sequential, RAG, chart furniture) and chart guidelines
+- **{doc}`chapters/palette-picker`** — Interactive WB palette finder with copy-paste snippets for Plotly, Matplotlib, ggplot2, and CSS
 - **{doc}`chapters/icons`** — WB logos, scorecard icons, OCHA humanitarian icon sets
 
 <div style="margin-top:24px;">

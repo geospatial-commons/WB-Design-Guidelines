@@ -2,7 +2,9 @@
 
 Color palettes and chart guidelines for WB data products. Palettes based on the **UK Government Analysis Function** color system — purpose-built for institutional dashboards, colorblind-safe, and WCAG-compliant.
 
-> **Why not standard WB brand colors?** The WB vertical palettes are single-hue thematic identities, not designed for multi-category chart comparison. The UK Gov palettes solve the same problem (institutional trust, accessibility) and anchor in navy — visually compatible with WB's `#002244`.
+> **Looking for WB-branded palettes with copy-paste code?** See {doc}`palette-picker` for an interactive palette finder using WB brand colors, with snippets for Plotly, Matplotlib, ggplot2, and CSS.
+
+> **Why not standard WB brand colors here?** The WB vertical palettes are single-hue thematic identities, not designed for multi-category chart comparison. The UK Gov palettes solve the same problem (institutional trust, accessibility) and anchor in navy — visually compatible with WB's `#002244`.
 
 **Source:** [UK Government Analysis Function — Data visualisation: colours in charts](https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-colours-in-charts/)
 

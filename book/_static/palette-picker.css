@@ -1,0 +1,516 @@
+/* =============================================================
+   WB Palette Picker — Scoped Styles
+   All classes prefixed pp- to avoid conflicts with custom.css
+   ============================================================= */
+
+/* ---- Layout ---- */
+#palette-picker-root {
+  font-family: "Open Sans", system-ui, sans-serif;
+  max-width: 1100px;
+}
+
+/* ---- Filter Bar ---- */
+.pp-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.pp-filter-label {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #6B7280;
+  margin-right: 4px;
+}
+
+.pp-filter-btn {
+  border: 1px solid #D1D5DB;
+  background: white;
+  color: #374151;
+  padding: 5px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  font-family: inherit;
+  transition: border-color 0.15s, background 0.15s, color 0.15s;
+}
+
+.pp-filter-btn:hover {
+  border-color: #009FDA;
+  color: #009FDA;
+}
+
+.pp-filter-btn.pp-active {
+  border-color: #009FDA;
+  background: #009FDA;
+  color: white;
+}
+
+.pp-cb-toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #6B7280;
+  cursor: pointer;
+  margin-left: auto;
+  user-select: none;
+}
+
+.pp-cb-toggle input[type="checkbox"] {
+  cursor: pointer;
+  accent-color: #009FDA;
+  width: 14px;
+  height: 14px;
+}
+
+/* ---- Section Heading ---- */
+.pp-section-label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: #9CA3AF;
+  margin: 24px 0 10px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #E5E7EB;
+}
+
+/* ---- Palette Grid ---- */
+.pp-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+/* ---- Palette Card ---- */
+.pp-card {
+  background: white;
+  border: 1px solid #E5E7EB;
+  border-radius: 6px;
+  padding: 16px;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.pp-card:hover {
+  border-color: #009FDA;
+  box-shadow: 0 2px 10px rgba(0, 159, 218, 0.10);
+}
+
+.pp-card-name {
+  font-weight: 700;
+  font-size: 14px;
+  color: #002244;
+  margin-bottom: 4px;
+}
+
+.pp-card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-bottom: 10px;
+}
+
+.pp-tag {
+  font-size: 11px;
+  padding: 1px 7px;
+  border-radius: 3px;
+  background: #F3F4F6;
+  color: #6B7280;
+}
+
+.pp-tag-cb {
+  background: #ECFDF5;
+  color: #065F46;
+}
+
+/* ---- Swatches ---- */
+.pp-swatches {
+  display: flex;
+  height: 36px;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 8px;
+  cursor: default;
+}
+
+.pp-swatch {
+  flex: 1;
+  position: relative;
+  transition: flex 0.15s;
+}
+
+.pp-swatch:hover {
+  flex: 2;
+}
+
+.pp-swatch-tooltip {
+  display: none;
+  position: absolute;
+  bottom: calc(100% + 6px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: #111827;
+  color: white;
+  font-size: 11px;
+  font-family: monospace;
+  padding: 3px 7px;
+  border-radius: 3px;
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.pp-swatch:hover .pp-swatch-tooltip {
+  display: block;
+}
+
+/* ---- Hex Chips ---- */
+.pp-hex-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-bottom: 10px;
+}
+
+.pp-hex-chip {
+  font-size: 11px;
+  font-family: "SFMono-Regular", Consolas, monospace;
+  background: #F9FAFB;
+  border: 1px solid #E5E7EB;
+  color: #374151;
+  padding: 2px 7px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background 0.1s, border-color 0.1s;
+  user-select: none;
+}
+
+.pp-hex-chip:hover {
+  background: #E0F4FC;
+  border-color: #009FDA;
+  color: #003A66;
+}
+
+/* ---- Mini Chart Preview ---- */
+.pp-chart-preview {
+  margin: 10px 0;
+  padding-top: 10px;
+  border-top: 1px solid #F3F4F6;
+}
+
+.pp-chart-label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: #9CA3AF;
+  margin-bottom: 6px;
+}
+
+.pp-bar-chart {
+  display: flex;
+  align-items: flex-end;
+  gap: 3px;
+  height: 44px;
+}
+
+.pp-bar {
+  border-radius: 2px 2px 0 0;
+  flex: 1;
+  min-width: 10px;
+  opacity: 0.92;
+  transition: opacity 0.15s;
+}
+
+.pp-bar:hover {
+  opacity: 1;
+}
+
+.pp-gradient-track {
+  height: 24px;
+  border-radius: 3px;
+  margin-bottom: 3px;
+}
+
+.pp-gradient-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  color: #9CA3AF;
+}
+
+/* ---- Copy Buttons ---- */
+.pp-copy-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.pp-copy-btn {
+  font-size: 11px;
+  font-family: inherit;
+  border: 1px solid #E5E7EB;
+  background: white;
+  color: #6B7280;
+  padding: 4px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background 0.1s, border-color 0.1s, color 0.1s;
+}
+
+.pp-copy-btn:hover {
+  background: #F9FAFB;
+  border-color: #9CA3AF;
+  color: #374151;
+}
+
+.pp-copy-btn-primary {
+  border-color: #009FDA;
+  color: #007BB8;
+}
+
+.pp-copy-btn-primary:hover {
+  background: #009FDA;
+  color: white;
+}
+
+/* ---- Code Snippet Panel ---- */
+.pp-snippet-panel {
+  margin-top: 10px;
+  display: none;
+}
+
+.pp-snippet-panel.pp-open {
+  display: block;
+}
+
+.pp-snippet-tabs {
+  display: flex;
+  border-bottom: 1px solid #E5E7EB;
+  margin-bottom: 0;
+  gap: 0;
+}
+
+.pp-snippet-tab {
+  font-size: 11px;
+  font-family: inherit;
+  padding: 5px 11px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  border-bottom: 2px solid transparent;
+  color: #9CA3AF;
+  transition: color 0.1s, border-color 0.1s;
+}
+
+.pp-snippet-tab:hover {
+  color: #374151;
+}
+
+.pp-snippet-tab.pp-tab-active {
+  color: #009FDA;
+  border-bottom-color: #009FDA;
+}
+
+.pp-snippet-content {
+  display: none;
+}
+
+.pp-snippet-content.pp-tab-active {
+  display: block;
+}
+
+.pp-snippet-content pre {
+  background: #F9FAFB;
+  border: 1px solid #E5E7EB;
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+  padding: 10px 12px;
+  font-size: 11.5px;
+  line-height: 1.6;
+  overflow-x: auto;
+  white-space: pre;
+  margin: 0;
+  color: #1F2937;
+}
+
+/* ---- Toast ---- */
+.pp-toast {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%) translateY(12px);
+  background: #111827;
+  color: white;
+  font-size: 13px;
+  padding: 8px 18px;
+  border-radius: 20px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s, transform 0.2s;
+  z-index: 1000;
+  white-space: nowrap;
+}
+
+.pp-toast.pp-toast-visible {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* ---- Pilot Badge (in admonition) ---- */
+.pp-pilot-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #065F46;
+}
+
+/* ---- Footer ---- */
+.pp-footer {
+  margin-top: 32px;
+  padding: 14px 16px;
+  background: #F0F9FF;
+  border: 1px solid #BAE6FD;
+  border-radius: 4px;
+  font-size: 12px;
+  color: #374151;
+  line-height: 1.6;
+}
+
+/* ---- Hidden utility ---- */
+.pp-hidden {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+/* ---- Empty state ---- */
+.pp-empty {
+  text-align: center;
+  padding: 48px 24px;
+  color: #9CA3AF;
+  font-size: 14px;
+}
+
+/* ============================================================
+   Dark mode overrides
+   Swatches intentionally NOT overridden — hex values are fixed
+   ============================================================ */
+html[data-theme="dark"] .pp-card {
+  background: #1E293B;
+  border-color: #334155;
+  color: #E2E8F0;
+}
+
+html[data-theme="dark"] .pp-card:hover {
+  border-color: #009FDA;
+}
+
+html[data-theme="dark"] .pp-card-name {
+  color: #7DCFED;
+}
+
+html[data-theme="dark"] .pp-tag {
+  background: #334155;
+  color: #94A3B8;
+}
+
+html[data-theme="dark"] .pp-tag-cb {
+  background: #064E3B;
+  color: #6EE7B7;
+}
+
+html[data-theme="dark"] .pp-hex-chip {
+  background: #0F172A;
+  border-color: #334155;
+  color: #CBD5E1;
+}
+
+html[data-theme="dark"] .pp-hex-chip:hover {
+  background: #1E3A4A;
+  border-color: #009FDA;
+  color: #7DCFED;
+}
+
+html[data-theme="dark"] .pp-filter-btn {
+  background: #1E293B;
+  border-color: #334155;
+  color: #CBD5E1;
+}
+
+html[data-theme="dark"] .pp-filter-btn:hover {
+  border-color: #009FDA;
+  color: #009FDA;
+}
+
+html[data-theme="dark"] .pp-filter-btn.pp-active {
+  background: #009FDA;
+  border-color: #009FDA;
+  color: white;
+}
+
+html[data-theme="dark"] .pp-cb-toggle {
+  color: #94A3B8;
+}
+
+html[data-theme="dark"] .pp-section-label {
+  color: #475569;
+  border-bottom-color: #1E293B;
+}
+
+html[data-theme="dark"] .pp-chart-preview {
+  border-top-color: #1E293B;
+}
+
+html[data-theme="dark"] .pp-copy-btn {
+  background: #1E293B;
+  border-color: #334155;
+  color: #94A3B8;
+}
+
+html[data-theme="dark"] .pp-copy-btn:hover {
+  background: #0F172A;
+  border-color: #64748B;
+  color: #CBD5E1;
+}
+
+html[data-theme="dark"] .pp-copy-btn-primary {
+  border-color: #009FDA;
+  color: #7DCFED;
+}
+
+html[data-theme="dark"] .pp-copy-btn-primary:hover {
+  background: #009FDA;
+  color: white;
+}
+
+html[data-theme="dark"] .pp-snippet-tabs {
+  border-bottom-color: #334155;
+}
+
+html[data-theme="dark"] .pp-snippet-content pre {
+  background: #0F172A;
+  border-color: #334155;
+  color: #E2E8F0;
+}
+
+html[data-theme="dark"] .pp-footer {
+  background: #0C1A27;
+  border-color: #1E3A4A;
+  color: #94A3B8;
+}
+
+html[data-theme="dark"] .pp-toast {
+  background: #E2E8F0;
+  color: #111827;
+}

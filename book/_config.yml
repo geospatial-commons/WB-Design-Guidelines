@@ -45,8 +45,10 @@ sphinx:
       - ../icons/scorecard
     html_css_files:
       - custom.css
+      - palette-picker.css
     html_js_files:
       - custom.js
+      - palette-picker.js
     html_theme_options:
       navigation_with_keys: false
       default_mode: light
