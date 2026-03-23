@@ -19,32 +19,32 @@ Click any swatch to copy the hex code.
 For data divided into named groups (bar charts, line charts, pie charts, maps with discrete categories).
 
 <div style="display:flex; flex-wrap:wrap; gap:4px; margin:12px 0;">
-  <div class="wb-swatch" data-hex="#12436D" style="background-color:#12436D; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; min-width:140px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
+  <div class="wb-swatch" data-hex="#12436D" style="background-color:#12436D; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; flex:1 1 140px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
     <span class="wb-swatch-hex" style="font-family:monospace;font-size:12px;display:block;font-weight:600;">#12436D</span>
     <span class="wb-swatch-name" style="display:block;font-size:11px;margin-top:2px;">Dark blue</span>
     <span class="wb-swatch-badges" style="display:block;margin-top:6px;"></span>
   </div>
-  <div class="wb-swatch" data-hex="#28A197" style="background-color:#28A197; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; min-width:140px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
+  <div class="wb-swatch" data-hex="#28A197" style="background-color:#28A197; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; flex:1 1 140px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
     <span class="wb-swatch-hex" style="font-family:monospace;font-size:12px;display:block;font-weight:600;">#28A197</span>
     <span class="wb-swatch-name" style="display:block;font-size:11px;margin-top:2px;">Turquoise</span>
     <span class="wb-swatch-badges" style="display:block;margin-top:6px;"></span>
   </div>
-  <div class="wb-swatch" data-hex="#801650" style="background-color:#801650; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; min-width:140px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
+  <div class="wb-swatch" data-hex="#801650" style="background-color:#801650; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; flex:1 1 140px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
     <span class="wb-swatch-hex" style="font-family:monospace;font-size:12px;display:block;font-weight:600;">#801650</span>
     <span class="wb-swatch-name" style="display:block;font-size:11px;margin-top:2px;">Dark pink</span>
     <span class="wb-swatch-badges" style="display:block;margin-top:6px;"></span>
   </div>
-  <div class="wb-swatch" data-hex="#F46A25" style="background-color:#F46A25; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; min-width:140px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
+  <div class="wb-swatch" data-hex="#F46A25" style="background-color:#F46A25; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; flex:1 1 140px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
     <span class="wb-swatch-hex" style="font-family:monospace;font-size:12px;display:block;font-weight:600;">#F46A25</span>
     <span class="wb-swatch-name" style="display:block;font-size:11px;margin-top:2px;">Orange</span>
     <span class="wb-swatch-badges" style="display:block;margin-top:6px;"></span>
   </div>
-  <div class="wb-swatch" data-hex="#3D3D3D" style="background-color:#3D3D3D; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; min-width:140px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
+  <div class="wb-swatch" data-hex="#3D3D3D" style="background-color:#3D3D3D; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; flex:1 1 140px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
     <span class="wb-swatch-hex" style="font-family:monospace;font-size:12px;display:block;font-weight:600;">#3D3D3D</span>
     <span class="wb-swatch-name" style="display:block;font-size:11px;margin-top:2px;">Dark grey</span>
     <span class="wb-swatch-badges" style="display:block;margin-top:6px;"></span>
   </div>
-  <div class="wb-swatch" data-hex="#A285D1" style="background-color:#A285D1; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; min-width:140px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
+  <div class="wb-swatch" data-hex="#A285D1" style="background-color:#A285D1; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; flex:1 1 140px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
     <span class="wb-swatch-hex" style="font-family:monospace;font-size:12px;display:block;font-weight:600;">#A285D1</span>
     <span class="wb-swatch-name" style="display:block;font-size:11px;margin-top:2px;">Light purple</span>
     <span class="wb-swatch-badges" style="display:block;margin-top:6px;"></span>
@@ -72,12 +72,12 @@ For data divided into named groups (bar charts, line charts, pie charts, maps wi
 When comparing exactly two categories, use this high-contrast pair:
 
 <div style="display:flex; flex-wrap:wrap; gap:4px; margin:8px 0;">
-  <div class="wb-swatch" data-hex="#12436D" style="background-color:#12436D; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; min-width:140px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
+  <div class="wb-swatch" data-hex="#12436D" style="background-color:#12436D; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; flex:1 1 140px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
     <span class="wb-swatch-hex" style="font-family:monospace;font-size:12px;display:block;font-weight:600;">#12436D</span>
     <span class="wb-swatch-name" style="display:block;font-size:11px;margin-top:2px;">Dark blue</span>
     <span class="wb-swatch-badges" style="display:block;margin-top:6px;"></span>
   </div>
-  <div class="wb-swatch" data-hex="#F46A25" style="background-color:#F46A25; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; min-width:140px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
+  <div class="wb-swatch" data-hex="#F46A25" style="background-color:#F46A25; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; flex:1 1 140px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
     <span class="wb-swatch-hex" style="font-family:monospace;font-size:12px;display:block;font-weight:600;">#F46A25</span>
     <span class="wb-swatch-name" style="display:block;font-size:11px;margin-top:2px;">Orange</span>
     <span class="wb-swatch-badges" style="display:block;margin-top:6px;"></span>
@@ -89,32 +89,32 @@ When comparing exactly two categories, use this high-contrast pair:
 For ordered/continuous data — rankings, intensity, magnitude. Use for choropleths, heatmaps, and single-metric bar charts where magnitude matters.
 
 <div style="display:flex; flex-wrap:wrap; gap:4px; margin:12px 0;">
-  <div class="wb-swatch" data-hex="#092135" style="background-color:#092135; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; min-width:140px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
+  <div class="wb-swatch" data-hex="#092135" style="background-color:#092135; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; flex:1 1 140px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
     <span class="wb-swatch-hex" style="font-family:monospace;font-size:12px;display:block;font-weight:600;">#092135</span>
     <span class="wb-swatch-name" style="display:block;font-size:11px;margin-top:2px;">Darkest blue</span>
     <span class="wb-swatch-badges" style="display:block;margin-top:6px;"></span>
   </div>
-  <div class="wb-swatch" data-hex="#12436D" style="background-color:#12436D; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; min-width:140px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
+  <div class="wb-swatch" data-hex="#12436D" style="background-color:#12436D; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; flex:1 1 140px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
     <span class="wb-swatch-hex" style="font-family:monospace;font-size:12px;display:block;font-weight:600;">#12436D</span>
     <span class="wb-swatch-name" style="display:block;font-size:11px;margin-top:2px;">Dark blue</span>
     <span class="wb-swatch-badges" style="display:block;margin-top:6px;"></span>
   </div>
-  <div class="wb-swatch" data-hex="#2073BC" style="background-color:#2073BC; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; min-width:140px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
+  <div class="wb-swatch" data-hex="#2073BC" style="background-color:#2073BC; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; flex:1 1 140px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
     <span class="wb-swatch-hex" style="font-family:monospace;font-size:12px;display:block;font-weight:600;">#2073BC</span>
     <span class="wb-swatch-name" style="display:block;font-size:11px;margin-top:2px;">Mid blue</span>
     <span class="wb-swatch-badges" style="display:block;margin-top:6px;"></span>
   </div>
-  <div class="wb-swatch" data-hex="#6BACE6" style="background-color:#6BACE6; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; min-width:140px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
+  <div class="wb-swatch" data-hex="#6BACE6" style="background-color:#6BACE6; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; flex:1 1 140px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
     <span class="wb-swatch-hex" style="font-family:monospace;font-size:12px;display:block;font-weight:600;">#6BACE6</span>
     <span class="wb-swatch-name" style="display:block;font-size:11px;margin-top:2px;">Light blue</span>
     <span class="wb-swatch-badges" style="display:block;margin-top:6px;"></span>
   </div>
-  <div class="wb-swatch" data-hex="#ADD1F1" style="background-color:#ADD1F1; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; min-width:140px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.10);">
+  <div class="wb-swatch" data-hex="#ADD1F1" style="background-color:#ADD1F1; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; flex:1 1 140px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.10);">
     <span class="wb-swatch-hex" style="font-family:monospace;font-size:12px;display:block;font-weight:600;">#ADD1F1</span>
     <span class="wb-swatch-name" style="display:block;font-size:11px;margin-top:2px;">Lightest blue</span>
     <span class="wb-swatch-badges" style="display:block;margin-top:6px;"></span>
   </div>
-  <div class="wb-swatch" data-hex="#F2F2F2" style="background-color:#F2F2F2; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; min-width:140px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.12);">
+  <div class="wb-swatch" data-hex="#F2F2F2" style="background-color:#F2F2F2; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; flex:1 1 140px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.12);">
     <span class="wb-swatch-hex" style="font-family:monospace;font-size:12px;display:block;font-weight:600;">#F2F2F2</span>
     <span class="wb-swatch-name" style="display:block;font-size:11px;margin-top:2px;">Pale grey (null)</span>
     <span class="wb-swatch-badges" style="display:block;margin-top:6px;"></span>
@@ -139,12 +139,12 @@ For ordered/continuous data — rankings, intensity, magnitude. Use for chorople
 For drawing attention to a specific series or data point while de-emphasizing the rest.
 
 <div style="display:flex; flex-wrap:wrap; gap:4px; margin:12px 0;">
-  <div class="wb-swatch" data-hex="#12436D" style="background-color:#12436D; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; min-width:140px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
+  <div class="wb-swatch" data-hex="#12436D" style="background-color:#12436D; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; flex:1 1 140px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
     <span class="wb-swatch-hex" style="font-family:monospace;font-size:12px;display:block;font-weight:600;">#12436D</span>
     <span class="wb-swatch-name" style="display:block;font-size:11px;margin-top:2px;">Focus color</span>
     <span class="wb-swatch-badges" style="display:block;margin-top:6px;"></span>
   </div>
-  <div class="wb-swatch" data-hex="#BFBFBF" style="background-color:#BFBFBF; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; min-width:140px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.10);">
+  <div class="wb-swatch" data-hex="#BFBFBF" style="background-color:#BFBFBF; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; flex:1 1 140px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.10);">
     <span class="wb-swatch-hex" style="font-family:monospace;font-size:12px;display:block;font-weight:600;">#BFBFBF</span>
     <span class="wb-swatch-name" style="display:block;font-size:11px;margin-top:2px;">Background (muted)</span>
     <span class="wb-swatch-badges" style="display:block;margin-top:6px;"></span>
@@ -158,17 +158,17 @@ For drawing attention to a specific series or data point while de-emphasizing th
 Red-Amber-Green for status tables and KPI indicators. **Tables and scorecards only** — not for charts.
 
 <div style="display:flex; flex-wrap:wrap; gap:4px; margin:12px 0;">
-  <div class="wb-swatch" data-hex="#C00000" style="background-color:#C00000; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; min-width:140px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
+  <div class="wb-swatch" data-hex="#C00000" style="background-color:#C00000; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; flex:1 1 140px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
     <span class="wb-swatch-hex" style="font-family:monospace;font-size:12px;display:block;font-weight:600;">#C00000</span>
     <span class="wb-swatch-name" style="display:block;font-size:11px;margin-top:2px;">Red — Critical</span>
     <span class="wb-swatch-badges" style="display:block;margin-top:6px;"></span>
   </div>
-  <div class="wb-swatch" data-hex="#FFC000" style="background-color:#FFC000; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; min-width:140px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
+  <div class="wb-swatch" data-hex="#FFC000" style="background-color:#FFC000; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; flex:1 1 140px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
     <span class="wb-swatch-hex" style="font-family:monospace;font-size:12px;display:block;font-weight:600;">#FFC000</span>
     <span class="wb-swatch-name" style="display:block;font-size:11px;margin-top:2px;">Amber — Caution</span>
     <span class="wb-swatch-badges" style="display:block;margin-top:6px;"></span>
   </div>
-  <div class="wb-swatch" data-hex="#8ED973" style="background-color:#8ED973; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; min-width:140px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
+  <div class="wb-swatch" data-hex="#8ED973" style="background-color:#8ED973; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; flex:1 1 140px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
     <span class="wb-swatch-hex" style="font-family:monospace;font-size:12px;display:block;font-weight:600;">#8ED973</span>
     <span class="wb-swatch-name" style="display:block;font-size:11px;margin-top:2px;">Green — On track</span>
     <span class="wb-swatch-badges" style="display:block;margin-top:6px;"></span>
@@ -186,17 +186,17 @@ Red-Amber-Green for status tables and KPI indicators. **Tables and scorecards on
 ### Chart Furniture Colors
 
 <div style="display:flex; flex-wrap:wrap; gap:4px; margin:12px 0;">
-  <div class="wb-swatch" data-hex="#D9D9D9" style="background-color:#D9D9D9; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; min-width:140px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.12);">
+  <div class="wb-swatch" data-hex="#D9D9D9" style="background-color:#D9D9D9; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; flex:1 1 140px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.12);">
     <span class="wb-swatch-hex" style="font-family:monospace;font-size:12px;display:block;font-weight:600;">#D9D9D9</span>
     <span class="wb-swatch-name" style="display:block;font-size:11px;margin-top:2px;">Gridlines</span>
     <span class="wb-swatch-badges" style="display:block;margin-top:6px;"></span>
   </div>
-  <div class="wb-swatch" data-hex="#595959" style="background-color:#595959; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; min-width:140px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
+  <div class="wb-swatch" data-hex="#595959" style="background-color:#595959; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; flex:1 1 140px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
     <span class="wb-swatch-hex" style="font-family:monospace;font-size:12px;display:block;font-weight:600;">#595959</span>
     <span class="wb-swatch-name" style="display:block;font-size:11px;margin-top:2px;">Axis labels</span>
     <span class="wb-swatch-badges" style="display:block;margin-top:6px;"></span>
   </div>
-  <div class="wb-swatch" data-hex="#FFFFFF" style="background-color:#FFFFFF; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; min-width:140px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.15);">
+  <div class="wb-swatch" data-hex="#FFFFFF" style="background-color:#FFFFFF; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; flex:1 1 140px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.15);">
     <span class="wb-swatch-hex" style="font-family:monospace;font-size:12px;display:block;font-weight:600;">#FFFFFF</span>
     <span class="wb-swatch-name" style="display:block;font-size:11px;margin-top:2px;">Chart background</span>
     <span class="wb-swatch-badges" style="display:block;margin-top:6px;"></span>
