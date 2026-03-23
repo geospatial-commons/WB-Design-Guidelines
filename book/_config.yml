@@ -46,6 +46,7 @@ sphinx:
       - custom.css
     html_theme_options:
       navigation_with_keys: false
+      default_mode: light
       logo:
         text: "World Bank Design Guidelines"
       pygments_light_style: tango
