@@ -4,7 +4,7 @@ Interactive tool for finding and copying WB-compliant color palettes for data vi
 
 :::{admonition} Piloted with MENAAP Region Team
 :class: tip
-These palettes are developed and maintained for data visualization and front-end development. They use **WB brand colors** arranged for data viz best practice — accessible, perceptually ordered, and colorblind-safe where indicated. Scoped to MENAAP region and Afghanistan country programs.
+These palettes are developed and maintained for data visualization and front-end development. They use **WB brand colors** arranged for data viz best practice; accessible, perceptually ordered, and colorblind-safe where indicated. Scoped to MENAAP region and Afghanistan country programs.
 :::
 
 For the UK Gov Analysis Function reference palettes (general-purpose accessible data viz), see {doc}`data-viz`.

@@ -1,12 +1,12 @@
-# World Bank Design Guidelines
+# World Bank Data Viz Guidance
 
-Welcome to the World Bank Design Guidelines — the single source of truth for building WB dashboards and data products.
+Welcome to the World Bank Data Viz Guidance, the single source of truth for building WB dashboards and data products.
 
 This guide documents the visual and interaction standards used across WB front-end tools: color systems, typography, layout patterns, component specs, data visualization palettes, and icon assets.
 
 ## What is this?
 
-A reference for anyone building WB-branded digital products — whether that's an ArcGIS dashboard, a Next.js app, a Python chart, or a static report. The guidelines are derived from the WBG Digital Look & Feel Style Guide and adapted for practical front-end use.
+A reference for anyone building WB-branded digital products; whether that's an ArcGIS dashboard, a Next.js app, a Python chart, or a static report. The guidelines are derived from the WBG Digital Look & Feel Style Guide and adapted for practical front-end use.
 
 ## Who is this for?
 
@@ -18,10 +18,10 @@ A reference for anyone building WB-branded digital products — whether that's a
 
 ## Guide Structure
 
-- **{doc}`chapters/design-system`** — Colors (core palette, RAG, vertical brand), typography, layout & spacing, components
-- **{doc}`chapters/data-viz`** — Data visualization color palettes (categorical, sequential, RAG, chart furniture) and chart guidelines
-- **{doc}`chapters/palette-picker`** — Interactive palette finder with copy-paste snippets for Plotly, Matplotlib, ggplot2, and CSS
-- **{doc}`chapters/icons`** — WB logos, scorecard icons, OCHA humanitarian icon sets
+- **{doc}`chapters/design-system`**: Colors (core palette, RAG, vertical brand), typography, layout & spacing, components
+- **{doc}`chapters/data-viz`**: Data visualization color palettes (categorical, sequential, RAG, chart furniture) and chart guidelines
+- **{doc}`chapters/palette-picker`**: Interactive palette finder with copy-paste snippets for Plotly, Matplotlib, ggplot2, and CSS
+- **{doc}`chapters/icons`**: WB logos, scorecard icons, OCHA humanitarian icon sets
 
 <div style="margin-top:24px;">
   <a href="chapters/design-system.html"

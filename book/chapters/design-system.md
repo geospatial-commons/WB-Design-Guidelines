@@ -101,7 +101,7 @@ Standard colors for risk indicators (Red-Amber-Green). These are universal alert
 
 ### WB Vertical Brand Colors
 
-The official WBG palette organized by thematic vertical. Each vertical has a base color and 9 tints (10%–90%). Use **one vertical palette only** within a given asset — do not mix palettes.
+The official WBG palette organized by thematic vertical. Each vertical has a base color and 9 tints (10%–90%). Use **one vertical palette only** within a given asset; do not mix palettes.
 
 > **Data viz note:** These verticals are designed for thematic branding, not multi-category chart comparison. For charts and maps, see {doc}`data-viz`.
 
@@ -349,7 +349,7 @@ const openSans = Open_Sans({
 - **Body:** Regular (400)
 - Avoid stylization or decorative typefaces; Open Sans only
 - All-caps labels should use letter-spacing for readability (`letter-spacing: 0.08em`)
-- Do not use `#009FDA` (WB Blue) for small body text — contrast fails WCAG AA. Use `#002244` or `#111827` for readable text
+- Do not use `#009FDA` (WB Blue) for small body text; contrast fails WCAG AA. Use `#002244` or `#111827` for readable text
 
 ### General WBG Principles
 
@@ -436,7 +436,7 @@ This is primarily a **desktop tool**; dashboards are for analysts and program ma
 
 **Card Grid:** Standard: 3-column on ≥1280px, 2-column on 1024–1280px, 1-column on mobile.
 
-**Full-Width Sections** — Maps and wide charts should be full-width within the content area. Use `border-radius: 8px` and `box-shadow: 0 1px 3px rgba(0,0,0,0.08)` on card containers.
+**Full-Width Sections:** Maps and wide charts should be full-width within the content area. Use `border-radius: 8px` and `box-shadow: 0 1px 3px rgba(0,0,0,0.08)` on card containers.
 
 ### WBG Composition Principles
 
@@ -475,16 +475,16 @@ Dashboard component patterns for WB data products.
 
 ### KPI Card
 
-**Default variant** — Background white · Left border `4px solid #009FDA` · Title 10px/600/`#6B7280` uppercase · Value 24px/700/`#111827`
+**Default variant:** Background white · Left border `4px solid #009FDA` · Title 10px/600/`#6B7280` uppercase · Value 24px/700/`#111827`
 
-**Feature variant** — Background `#002244` (navy) · Text white · Use for one card per strip (the primary metric)
+**Feature variant:** Background `#002244` (navy) · Text white · Use for one card per strip (the primary metric)
 
 ### Data Table
 
 - Header: `#EEF0F3` background, 12px/600/`#6B7280` uppercase
 - Row height: 40px minimum · Body text: 14px/400/`#111827`
 - Alternating rows: white / `#F7F8FA`
-- Subtle row dividers only (`1px solid #EEF0F3`) — no heavy borders
+- Subtle row dividers only (`1px solid #EEF0F3`); no heavy borders
 - Sortable columns: active sort in `#009FDA`
 
 ### Filter Bar

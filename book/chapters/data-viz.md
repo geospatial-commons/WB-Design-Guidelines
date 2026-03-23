@@ -1,12 +1,12 @@
 # Data Visualization
 
-Color palettes and chart guidelines for WB data products. Palettes based on the **UK Government Analysis Function** color system — purpose-built for institutional dashboards, colorblind-safe, and WCAG-compliant.
+Color palettes and chart guidelines for WB data products. Palettes based on the **UK Government Analysis Function** color system; purpose-built for institutional dashboards, colorblind-safe, and WCAG-compliant.
 
 > **Looking for WB-branded palettes with copy-paste code?** See {doc}`palette-picker` for an interactive palette finder using WB brand colors, with snippets for Plotly, Matplotlib, ggplot2, and CSS.
 
-> **Why not standard WB brand colors here?** The WB vertical palettes are single-hue thematic identities, not designed for multi-category chart comparison. The UK Gov palettes solve the same problem (institutional trust, accessibility) and anchor in navy — visually compatible with WB's `#002244`.
+> **Why not standard WB brand colors here?** The WB vertical palettes are single-hue thematic identities, not designed for multi-category chart comparison. The UK Gov palettes solve the same problem (institutional trust, accessibility) and anchor in navy, visually compatible with WB's `#002244`.
 
-**Source:** [UK Government Analysis Function — Data visualisation: colours in charts](https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-colours-in-charts/)
+**Source:** [UK Government Analysis Function: Data visualisation: colours in charts](https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-colours-in-charts/)
 
 ---
 
@@ -53,19 +53,19 @@ For data divided into named groups (bar charts, line charts, pie charts, maps wi
 
 | # | Name | Hex | When to use |
 |---|------|-----|-------------|
-| 1 | Dark blue | `#12436D` | First / primary series — highest contrast |
+| 1 | Dark blue | `#12436D` | First / primary series (highest contrast) |
 | 2 | Turquoise | `#28A197` | Second series |
 | 3 | Dark pink | `#801650` | Third series |
 | 4 | Orange | `#F46A25` | Fourth series |
-| 5 | Dark grey | `#3D3D3D` | Fifth — use sparingly |
-| 6 | Light purple | `#A285D1` | Sixth — use sparingly |
+| 5 | Dark grey | `#3D3D3D` | Fifth; use sparingly |
+| 6 | Light purple | `#A285D1` | Sixth; use sparingly |
 
 **Rules:**
-- Use colors in order — do not skip or rearrange
+- Use colors in order; do not skip or rearrange
 - **Limit to 4 colors** wherever possible. If you need 5–6, consider restructuring the chart
 - All adjacent pairs have a contrast ratio of at least 3:1
 - Colorblind-safe and renders legibly in greyscale
-- Never rely on color alone — label lines/bars directly
+- Never rely on color alone; label lines/bars directly
 
 #### Duo (two-series charts)
 
@@ -127,14 +127,14 @@ WB brand colors arranged for multi-category chart comparison. Use when your prod
 | 2 | WB Blue | `#009FDA` | Second series |
 | 3 | People Yellow | `#F7B841` | Third series |
 | 4 | Prosperity Purple | `#872C8F` | Fourth series |
-| 5 | WB Teal | `#00A996` | Fifth — use sparingly |
-| 6 | Infrastructure Red | `#91302F` | Sixth — use sparingly |
+| 5 | WB Teal | `#00A996` | Fifth; use sparingly |
+| 6 | Infrastructure Red | `#91302F` | Sixth; use sparingly |
 
 ---
 
 ### Sequential Palette
 
-For ordered/continuous data — rankings, intensity, magnitude. Use for choropleths, heatmaps, and single-metric bar charts where magnitude matters.
+For ordered/continuous data: rankings, intensity, magnitude. Use for choropleths, heatmaps, and single-metric bar charts where magnitude matters.
 
 <div style="display:flex; flex-wrap:wrap; gap:4px; margin:12px 0;">
   <div class="wb-swatch" data-hex="#092135" style="background-color:#092135; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; flex:1 1 140px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
@@ -177,8 +177,8 @@ For ordered/continuous data — rankings, intensity, magnitude. Use for chorople
 | 5 | Full range (all 5) |
 
 **Rules:**
-- Darkest = highest value — always
-- Pale grey (`#F2F2F2`) is reserved for null / no data / suppressed values only — never a data category
+- Darkest = highest value; always
+- Pale grey (`#F2F2F2`) is reserved for null / no data / suppressed values only; never a data category
 - For light-colored bars, add a visible border so bar size is legible without color
 - Always provide a data table or text description as an accessible alternative
 
@@ -203,22 +203,22 @@ For drawing attention to a specific series or data point while de-emphasizing th
 
 ### RAG / Status Colors
 
-Red-Amber-Green for status tables and KPI indicators. **Tables and scorecards only** — not for charts.
+Red-Amber-Green for status tables and KPI indicators. **Tables and scorecards only**; not for charts.
 
 <div style="display:flex; flex-wrap:wrap; gap:4px; margin:12px 0;">
   <div class="wb-swatch" data-hex="#C00000" style="background-color:#C00000; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; flex:1 1 140px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
     <span class="wb-swatch-hex" style="font-family:monospace;font-size:12px;display:block;font-weight:600;">#C00000</span>
-    <span class="wb-swatch-name" style="display:block;font-size:11px;margin-top:2px;">Red — Critical</span>
+    <span class="wb-swatch-name" style="display:block;font-size:11px;margin-top:2px;">Red: Critical</span>
     <span class="wb-swatch-badges" style="display:block;margin-top:6px;"></span>
   </div>
   <div class="wb-swatch" data-hex="#FFC000" style="background-color:#FFC000; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; flex:1 1 140px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
     <span class="wb-swatch-hex" style="font-family:monospace;font-size:12px;display:block;font-weight:600;">#FFC000</span>
-    <span class="wb-swatch-name" style="display:block;font-size:11px;margin-top:2px;">Amber — Caution</span>
+    <span class="wb-swatch-name" style="display:block;font-size:11px;margin-top:2px;">Amber: Caution</span>
     <span class="wb-swatch-badges" style="display:block;margin-top:6px;"></span>
   </div>
   <div class="wb-swatch" data-hex="#8ED973" style="background-color:#8ED973; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; flex:1 1 140px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
     <span class="wb-swatch-hex" style="font-family:monospace;font-size:12px;display:block;font-weight:600;">#8ED973</span>
-    <span class="wb-swatch-name" style="display:block;font-size:11px;margin-top:2px;">Green — On track</span>
+    <span class="wb-swatch-name" style="display:block;font-size:11px;margin-top:2px;">Green: On track</span>
     <span class="wb-swatch-badges" style="display:block;margin-top:6px;"></span>
   </div>
 </div>
@@ -254,8 +254,8 @@ Red-Amber-Green for status tables and KPI indicators. **Tables and scorecards on
 ### Accessibility Rules
 
 1. **Contrast:** Minimum 3:1 for graphic elements; 4.5:1 for text
-2. **Don't rely on color alone** — label lines directly, use patterns in addition to color where possible
-3. **Provide alternatives** — always include a data table or plain-text description alongside charts
+2. **Don't rely on color alone**; label lines directly, use patterns in addition to color where possible
+3. **Provide alternatives**; always include a data table or plain-text description alongside charts
 4. **Test everything** with a colorblind simulator before publishing
 
 **Testing tools:**
@@ -271,15 +271,15 @@ Styling standards for charts and maps in WB data products.
 
 ### Axes
 
-- Axis lines: `#D9D9D9`, 1px — light, not dominant
+- Axis lines: `#D9D9D9`, 1px; light, not dominant
 - Tick marks: omit or keep minimal
 - Labels: 12px, `#595959`, Open Sans 400
 - Y-axis label: horizontal where possible (avoid rotated text)
-- Start axes at zero for bar charts — do not truncate the baseline
+- Start axes at zero for bar charts; do not truncate the baseline
 
 ### Gridlines
 
-- Color: `#D9D9D9` — light grey
+- Color: `#D9D9D9`; light grey
 - Style: dashed preferred
 - Gridlines should support reading, not dominate the chart
 - Horizontal gridlines only (no vertical gridlines in bar/line charts)
@@ -289,7 +289,7 @@ Styling standards for charts and maps in WB data products.
 - Position: right of chart (wide screens) or below the chart
 - Label format: match the data series label exactly
 - Swatch size: 12×12px minimum
-- Do not use legends when direct labeling is feasible — direct labels are clearer
+- Do not use legends when direct labeling is feasible; direct labels are clearer
 
 ### Tooltips
 
@@ -301,7 +301,7 @@ Styling standards for charts and maps in WB data products.
 
 ### Do's and Don'ts
 
-> **Phase 2:** Side-by-side correct/incorrect SVG chart examples will be added here — bar chart, choropleth, RAG table, and axis/gridline treatment.
+> **Phase 2:** Side-by-side correct/incorrect SVG chart examples will be added here: bar chart, choropleth, RAG table, and axis/gridline treatment.
 
 **Do:**
 - Label data directly on lines and bars where space allows
@@ -310,7 +310,7 @@ Styling standards for charts and maps in WB data products.
 - Include a plain-text data table alongside all charts for accessibility
 
 **Don't:**
-- Use rainbow colors for categorical data — use the UK Gov palette in order
+- Use rainbow colors for categorical data; use the UK Gov palette in order
 - Invert sequential scales (darkest should always = highest)
 - Use gridlines heavier than the data itself
 - Rely on color alone to encode information
