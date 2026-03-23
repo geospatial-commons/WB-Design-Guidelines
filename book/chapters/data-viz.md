@@ -84,6 +84,54 @@ When comparing exactly two categories, use this high-contrast pair:
   </div>
 </div>
 
+### WB Categorical Palette
+
+WB brand colors arranged for multi-category chart comparison. Use when your product requires visual alignment with WB brand identity. See {doc}`palette-picker` for copy-paste code snippets.
+
+<div style="display:flex; flex-wrap:wrap; gap:4px; margin:12px 0;">
+  <div class="wb-swatch" data-hex="#002244" style="background-color:#002244; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; flex:1 1 140px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
+    <span class="wb-swatch-hex" style="font-family:monospace;font-size:12px;display:block;font-weight:600;">#002244</span>
+    <span class="wb-swatch-name" style="display:block;font-size:11px;margin-top:2px;">WB Navy</span>
+    <span class="wb-swatch-badges" style="display:block;margin-top:6px;"></span>
+  </div>
+  <div class="wb-swatch" data-hex="#009FDA" style="background-color:#009FDA; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; flex:1 1 140px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
+    <span class="wb-swatch-hex" style="font-family:monospace;font-size:12px;display:block;font-weight:600;">#009FDA</span>
+    <span class="wb-swatch-name" style="display:block;font-size:11px;margin-top:2px;">WB Blue</span>
+    <span class="wb-swatch-badges" style="display:block;margin-top:6px;"></span>
+  </div>
+  <div class="wb-swatch" data-hex="#F7B841" style="background-color:#F7B841; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; flex:1 1 140px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
+    <span class="wb-swatch-hex" style="font-family:monospace;font-size:12px;display:block;font-weight:600;">#F7B841</span>
+    <span class="wb-swatch-name" style="display:block;font-size:11px;margin-top:2px;">People Yellow</span>
+    <span class="wb-swatch-badges" style="display:block;margin-top:6px;"></span>
+  </div>
+  <div class="wb-swatch" data-hex="#872C8F" style="background-color:#872C8F; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; flex:1 1 140px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
+    <span class="wb-swatch-hex" style="font-family:monospace;font-size:12px;display:block;font-weight:600;">#872C8F</span>
+    <span class="wb-swatch-name" style="display:block;font-size:11px;margin-top:2px;">Prosperity Purple</span>
+    <span class="wb-swatch-badges" style="display:block;margin-top:6px;"></span>
+  </div>
+  <div class="wb-swatch" data-hex="#00A996" style="background-color:#00A996; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; flex:1 1 140px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
+    <span class="wb-swatch-hex" style="font-family:monospace;font-size:12px;display:block;font-weight:600;">#00A996</span>
+    <span class="wb-swatch-name" style="display:block;font-size:11px;margin-top:2px;">WB Teal</span>
+    <span class="wb-swatch-badges" style="display:block;margin-top:6px;"></span>
+  </div>
+  <div class="wb-swatch" data-hex="#91302F" style="background-color:#91302F; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; flex:1 1 140px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
+    <span class="wb-swatch-hex" style="font-family:monospace;font-size:12px;display:block;font-weight:600;">#91302F</span>
+    <span class="wb-swatch-name" style="display:block;font-size:11px;margin-top:2px;">Infrastructure Red</span>
+    <span class="wb-swatch-badges" style="display:block;margin-top:6px;"></span>
+  </div>
+</div>
+
+| # | Name | Hex | When to use |
+|---|------|-----|-------------|
+| 1 | WB Navy | `#002244` | First / primary series |
+| 2 | WB Blue | `#009FDA` | Second series |
+| 3 | People Yellow | `#F7B841` | Third series |
+| 4 | Prosperity Purple | `#872C8F` | Fourth series |
+| 5 | WB Teal | `#00A996` | Fifth — use sparingly |
+| 6 | Infrastructure Red | `#91302F` | Sixth — use sparingly |
+
+---
+
 ### Sequential Palette
 
 For ordered/continuous data — rankings, intensity, magnitude. Use for choropleths, heatmaps, and single-metric bar charts where magnitude matters.

@@ -1,12 +1,12 @@
 {%- extends "pydata_sphinx_theme/layout.html" %}
 
-{# Force light mode as the default when no user preference is stored #}
+{# Force light mode always — dark mode is disabled for this site #}
 {%- block extrahead %}
   {{ super() }}
   <script data-cfasync="false">
-    if (!localStorage.getItem("mode")) {
-      document.documentElement.dataset.mode = "light";
-      document.documentElement.dataset.theme = "light";
-    }
+    document.documentElement.dataset.mode = "light";
+    document.documentElement.dataset.theme = "light";
+    localStorage.setItem("mode", "light");
+    localStorage.setItem("theme", "light");
   </script>
 {%- endblock extrahead %}

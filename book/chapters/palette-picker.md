@@ -1,4 +1,4 @@
-# WB Palette Picker
+# Palette Picker
 
 Interactive tool for finding and copying WB-compliant color palettes for data visualization. Filter by palette type, preview colors in context, and grab copy-paste code snippets for your tool.
 
@@ -58,6 +58,7 @@ Static reference table for non-interactive environments.
 | Palette | Colors | Colorblind-safe |
 |---------|--------|-----------------|
 | WB Categorical | `#002244` `#009FDA` `#F7B841` `#872C8F` `#00A996` `#91302F` | Yes |
+| Alternative Categorical | `#12436D` `#28A197` `#801650` `#F46A25` `#3D3D3D` `#A285D1` | Yes |
 | WB Duo | `#002244` `#F7B841` | Yes |
 | WB Focus / Highlight | `#009FDA` (active) `#BFBFBF` (background) | Yes |
 

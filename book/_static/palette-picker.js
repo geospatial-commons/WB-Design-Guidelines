@@ -27,6 +27,21 @@
       ]
     },
     {
+      id: 'uk-categorical',
+      name: 'Alternative Categorical',
+      type: 'categorical',
+      colorblindSafe: true,
+      usage: 'UK Government Analysis Function palette — institutional dashboards requiring highest colorblind safety and greyscale legibility. Use in order; limit to 4.',
+      colors: [
+        { name: 'Dark blue',    hex: '#12436D' },
+        { name: 'Turquoise',    hex: '#28A197' },
+        { name: 'Dark pink',    hex: '#801650' },
+        { name: 'Orange',       hex: '#F46A25' },
+        { name: 'Dark grey',    hex: '#3D3D3D' },
+        { name: 'Light purple', hex: '#A285D1' }
+      ]
+    },
+    {
       id: 'wb-duo',
       name: 'WB Duo',
       type: 'categorical',

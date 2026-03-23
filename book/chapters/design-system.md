@@ -10,43 +10,43 @@ WB visual and interaction standards for digital dashboards and data products. So
 
 The practical color set for building WB dashboards. Click any swatch to copy the hex code.
 
-<div style="display:flex; flex-wrap:wrap; gap:4px; margin:12px 0;">
-  <div class="wb-swatch" data-hex="#009FDA" style="background-color:#009FDA; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; flex:1 1 140px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
+<div style="display:grid; grid-template-columns:repeat(4,1fr); gap:4px; margin:12px 0;">
+  <div class="wb-swatch" data-hex="#009FDA" style="background-color:#009FDA; padding:12px 16px; border-radius:6px; display:flex; flex-direction:column; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
     <span class="wb-swatch-hex" style="font-family:monospace;font-size:12px;display:block;font-weight:600;">#009FDA</span>
     <span class="wb-swatch-name" style="display:block;font-size:11px;margin-top:2px;">wb-blue</span>
     <span class="wb-swatch-badges" style="display:block;margin-top:6px;"></span>
   </div>
-  <div class="wb-swatch" data-hex="#002244" style="background-color:#002244; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; flex:1 1 140px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
+  <div class="wb-swatch" data-hex="#002244" style="background-color:#002244; padding:12px 16px; border-radius:6px; display:flex; flex-direction:column; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
     <span class="wb-swatch-hex" style="font-family:monospace;font-size:12px;display:block;font-weight:600;">#002244</span>
     <span class="wb-swatch-name" style="display:block;font-size:11px;margin-top:2px;">wb-navy</span>
     <span class="wb-swatch-badges" style="display:block;margin-top:6px;"></span>
   </div>
-  <div class="wb-swatch" data-hex="#00A996" style="background-color:#00A996; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; flex:1 1 140px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
-    <span class="wb-swatch-hex" style="font-family:monospace;font-size:12px;display:block;font-weight:600;">#00A996</span>
-    <span class="wb-swatch-name" style="display:block;font-size:11px;margin-top:2px;">wb-teal</span>
+  <div class="wb-swatch" data-hex="#12436D" style="background-color:#12436D; padding:12px 16px; border-radius:6px; display:flex; flex-direction:column; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
+    <span class="wb-swatch-hex" style="font-family:monospace;font-size:12px;display:block;font-weight:600;">#12436D</span>
+    <span class="wb-swatch-name" style="display:block;font-size:11px;margin-top:2px;">uk-dark-blue</span>
     <span class="wb-swatch-badges" style="display:block;margin-top:6px;"></span>
   </div>
-  <div class="wb-swatch" data-hex="#FFFFFF" style="background-color:#FFFFFF; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; flex:1 1 140px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.15);">
-    <span class="wb-swatch-hex" style="font-family:monospace;font-size:12px;display:block;font-weight:600;">#FFFFFF</span>
-    <span class="wb-swatch-name" style="display:block;font-size:11px;margin-top:2px;">wb-white</span>
+  <div class="wb-swatch" data-hex="#28A197" style="background-color:#28A197; padding:12px 16px; border-radius:6px; display:flex; flex-direction:column; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
+    <span class="wb-swatch-hex" style="font-family:monospace;font-size:12px;display:block;font-weight:600;">#28A197</span>
+    <span class="wb-swatch-name" style="display:block;font-size:11px;margin-top:2px;">uk-turquoise</span>
     <span class="wb-swatch-badges" style="display:block;margin-top:6px;"></span>
   </div>
-  <div class="wb-swatch" data-hex="#F7F8FA" style="background-color:#F7F8FA; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; flex:1 1 140px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.12);">
+  <div class="wb-swatch" data-hex="#F7F8FA" style="background-color:#F7F8FA; padding:12px 16px; border-radius:6px; display:flex; flex-direction:column; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.12);">
     <span class="wb-swatch-hex" style="font-family:monospace;font-size:12px;display:block;font-weight:600;">#F7F8FA</span>
     <span class="wb-swatch-name" style="display:block;font-size:11px;margin-top:2px;">wb-gray-50</span>
     <span class="wb-swatch-badges" style="display:block;margin-top:6px;"></span>
   </div>
-  <div class="wb-swatch" data-hex="#EEF0F3" style="background-color:#EEF0F3; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; flex:1 1 140px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.10);">
+  <div class="wb-swatch" data-hex="#EEF0F3" style="background-color:#EEF0F3; padding:12px 16px; border-radius:6px; display:flex; flex-direction:column; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.10);">
     <span class="wb-swatch-hex" style="font-family:monospace;font-size:12px;display:block;font-weight:600;">#EEF0F3</span>
     <span class="wb-swatch-name" style="display:block;font-size:11px;margin-top:2px;">wb-gray-100</span>
     <span class="wb-swatch-badges" style="display:block;margin-top:6px;"></span>
   </div>
-  <div class="wb-swatch" data-hex="#6B7280" style="background-color:#6B7280; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; flex:1 1 140px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
+  <div class="wb-swatch" data-hex="#6B7280" style="background-color:#6B7280; padding:12px 16px; border-radius:6px; display:flex; flex-direction:column; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
     <span class="wb-swatch-hex" style="font-family:monospace;font-size:12px;display:block;font-weight:600;">#6B7280</span>
     <span class="wb-swatch-name" style="display:block;font-size:11px;margin-top:2px;">wb-gray-500</span>
     <span class="wb-swatch-badges" style="display:block;margin-top:6px;"></span>
   </div>
-  <div class="wb-swatch" data-hex="#111827" style="background-color:#111827; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; flex:1 1 140px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
+  <div class="wb-swatch" data-hex="#111827" style="background-color:#111827; padding:12px 16px; border-radius:6px; display:flex; flex-direction:column; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
     <span class="wb-swatch-hex" style="font-family:monospace;font-size:12px;display:block;font-weight:600;">#111827</span>
     <span class="wb-swatch-name" style="display:block;font-size:11px;margin-top:2px;">wb-gray-900</span>
     <span class="wb-swatch-badges" style="display:block;margin-top:6px;"></span>
@@ -57,8 +57,8 @@ The practical color set for building WB dashboards. Click any swatch to copy the
 |-------|-----|-------|
 | `wb-blue` | `#009FDA` | Primary action, links, active states, chart lines, left-border accents |
 | `wb-navy` | `#002244` | Sidebar, page headers, "feature" KPI cards, section anchors |
-| `wb-teal` | `#00A996` | Positive indicators, success states, secondary accent |
-| `wb-white` | `#FFFFFF` | Page background, card backgrounds |
+| `uk-dark-blue` | `#12436D` | Data viz primary series, high-contrast anchor (UK Gov Analysis Function) |
+| `uk-turquoise` | `#28A197` | Data viz secondary series (UK Gov Analysis Function) |
 | `wb-gray-50` | `#F7F8FA` | App shell background |
 | `wb-gray-100` | `#EEF0F3` | Dividers, table zebra rows |
 | `wb-gray-500` | `#6B7280` | Secondary text, labels, metadata |
@@ -71,7 +71,7 @@ The practical color set for building WB dashboards. Click any swatch to copy the
 
 ### Status / RAG Colors
 
-Standard colors for risk indicators (Red-Amber-Green). These are universal alerting standards — do not modify.
+Standard colors for risk indicators (Red-Amber-Green). These are universal alerting standards; do not modify.
 
 <div style="display:flex; flex-wrap:wrap; gap:4px; margin:12px 0;">
   <div class="wb-swatch" data-hex="#C0392B" style="background-color:#C0392B; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; flex:1 1 140px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
@@ -105,7 +105,7 @@ The official WBG palette organized by thematic vertical. Each vertical has a bas
 
 > **Data viz note:** These verticals are designed for thematic branding, not multi-category chart comparison. For charts and maps, see {doc}`data-viz`.
 
-#### People (Yellow) — `#F7B841`
+#### People (Yellow): `#F7B841`
 
 <div style="display:flex; flex-wrap:wrap; gap:2px; margin:8px 0;">
   <div class="wb-swatch" data-hex="#F7B841" style="background-color:#F7B841; padding:8px 10px; border-radius:4px; display:inline-flex; flex-direction:column; min-width:75px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
@@ -160,7 +160,7 @@ The official WBG palette organized by thematic vertical. Each vertical has a bas
   </div>
 </div>
 
-#### Prosperity (Purple) — `#872C8F`
+#### Prosperity (Purple): `#872C8F`
 
 <div style="display:flex; flex-wrap:wrap; gap:2px; margin:8px 0;">
   <div class="wb-swatch" data-hex="#872C8F" style="background-color:#872C8F; padding:8px 10px; border-radius:4px; display:inline-flex; flex-direction:column; min-width:75px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
@@ -215,7 +215,7 @@ The official WBG palette organized by thematic vertical. Each vertical has a bas
   </div>
 </div>
 
-#### Planet (Green) — `#07AB50`
+#### Planet (Green): `#07AB50`
 
 <div style="display:flex; flex-wrap:wrap; gap:2px; margin:8px 0;">
   <div class="wb-swatch" data-hex="#07AB50" style="background-color:#07AB50; padding:8px 10px; border-radius:4px; display:inline-flex; flex-direction:column; min-width:75px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);"><span class="wb-swatch-hex" style="font-family:monospace;font-size:10px;display:block;font-weight:600;">#07AB50</span><span class="wb-swatch-name" style="display:block;font-size:9px;margin-top:2px;">Base</span><span class="wb-swatch-badges"></span></div>
@@ -230,7 +230,7 @@ The official WBG palette organized by thematic vertical. Each vertical has a bas
   <div class="wb-swatch" data-hex="#E6F7ED" style="background-color:#E6F7ED; padding:8px 10px; border-radius:4px; display:inline-flex; flex-direction:column; min-width:75px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.10);"><span class="wb-swatch-hex" style="font-family:monospace;font-size:10px;display:block;font-weight:600;">#E6F7ED</span><span class="wb-swatch-name" style="display:block;font-size:9px;margin-top:2px;">10%</span><span class="wb-swatch-badges"></span></div>
 </div>
 
-#### Planet / Marine (Teal) — `#009CA7`
+#### Planet / Marine (Teal): `#009CA7`
 
 <div style="display:flex; flex-wrap:wrap; gap:2px; margin:8px 0;">
   <div class="wb-swatch" data-hex="#009CA7" style="background-color:#009CA7; padding:8px 10px; border-radius:4px; display:inline-flex; flex-direction:column; min-width:75px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);"><span class="wb-swatch-hex" style="font-family:monospace;font-size:10px;display:block;font-weight:600;">#009CA7</span><span class="wb-swatch-name" style="display:block;font-size:9px;margin-top:2px;">Base</span><span class="wb-swatch-badges"></span></div>
@@ -245,7 +245,7 @@ The official WBG palette organized by thematic vertical. Each vertical has a bas
   <div class="wb-swatch" data-hex="#E5F5F6" style="background-color:#E5F5F6; padding:8px 10px; border-radius:4px; display:inline-flex; flex-direction:column; min-width:75px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.10);"><span class="wb-swatch-hex" style="font-family:monospace;font-size:10px;display:block;font-weight:600;">#E5F5F6</span><span class="wb-swatch-name" style="display:block;font-size:9px;margin-top:2px;">10%</span><span class="wb-swatch-badges"></span></div>
 </div>
 
-#### Infrastructure (Red) — `#91302F`
+#### Infrastructure (Red): `#91302F`
 
 <div style="display:flex; flex-wrap:wrap; gap:2px; margin:8px 0;">
   <div class="wb-swatch" data-hex="#91302F" style="background-color:#91302F; padding:8px 10px; border-radius:4px; display:inline-flex; flex-direction:column; min-width:75px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);"><span class="wb-swatch-hex" style="font-family:monospace;font-size:10px;display:block;font-weight:600;">#91302F</span><span class="wb-swatch-name" style="display:block;font-size:9px;margin-top:2px;">Base</span><span class="wb-swatch-badges"></span></div>
@@ -260,7 +260,7 @@ The official WBG palette organized by thematic vertical. Each vertical has a bas
   <div class="wb-swatch" data-hex="#F4EAEA" style="background-color:#F4EAEA; padding:8px 10px; border-radius:4px; display:inline-flex; flex-direction:column; min-width:75px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.10);"><span class="wb-swatch-hex" style="font-family:monospace;font-size:10px;display:block;font-weight:600;">#F4EAEA</span><span class="wb-swatch-name" style="display:block;font-size:9px;margin-top:2px;">10%</span><span class="wb-swatch-badges"></span></div>
 </div>
 
-#### Digital (Gray) — `#5D6472`
+#### Digital (Gray): `#5D6472`
 
 <div style="display:flex; flex-wrap:wrap; gap:2px; margin:8px 0;">
   <div class="wb-swatch" data-hex="#5D6472" style="background-color:#5D6472; padding:8px 10px; border-radius:4px; display:inline-flex; flex-direction:column; min-width:75px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);"><span class="wb-swatch-hex" style="font-family:monospace;font-size:10px;display:block;font-weight:600;">#5D6472</span><span class="wb-swatch-name" style="display:block;font-size:9px;margin-top:2px;">Base</span><span class="wb-swatch-badges"></span></div>
@@ -275,7 +275,7 @@ The official WBG palette organized by thematic vertical. Each vertical has a bas
   <div class="wb-swatch" data-hex="#EFF0F1" style="background-color:#EFF0F1; padding:8px 10px; border-radius:4px; display:inline-flex; flex-direction:column; min-width:75px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.10);"><span class="wb-swatch-hex" style="font-family:monospace;font-size:10px;display:block;font-weight:600;">#EFF0F1</span><span class="wb-swatch-name" style="display:block;font-size:9px;margin-top:2px;">10%</span><span class="wb-swatch-badges"></span></div>
 </div>
 
-#### Corporate / Knowledge Management (Navy) — `#004972`
+#### Corporate / Knowledge Management (Navy): `#004972`
 
 <div style="display:flex; flex-wrap:wrap; gap:2px; margin:8px 0;">
   <div class="wb-swatch" data-hex="#004972" style="background-color:#004972; padding:8px 10px; border-radius:4px; display:inline-flex; flex-direction:column; min-width:75px; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);"><span class="wb-swatch-hex" style="font-family:monospace;font-size:10px;display:block;font-weight:600;">#004972</span><span class="wb-swatch-name" style="display:block;font-size:9px;margin-top:2px;">Base</span><span class="wb-swatch-badges"></span></div>
@@ -296,7 +296,7 @@ The official WBG palette organized by thematic vertical. Each vertical has a bas
 - Never mix vertical palettes
 - Tint usage: Base → primary elements; 70–90% → secondary; 10–40% → backgrounds
 - Do not create custom colors outside this system
-- No gradients on UI chrome (gradients are for data viz only — choropleths, heatmaps)
+- No gradients on UI chrome (gradients are for data viz only: choropleths, heatmaps)
 
 ---
 
@@ -310,7 +310,7 @@ WB typography standards for digital dashboards. Source: WBG Digital Look & Feel 
 |------|--------|-------------|
 | Primary (global) | **Open Sans** | [Google Fonts](https://fonts.google.com/specimen/Open+Sans) / Adobe Fonts |
 | Arabic support | **Noto Sans Arabic** | [Google Fonts](https://fonts.google.com/noto/specimen/Noto+Sans+Arabic) / Adobe Fonts |
-| Monospace (data values) | **Geist Mono** | Next.js default — keep for numbers, codes, data values |
+| Monospace (data values) | **Geist Mono** | Next.js default; keep for numbers, codes, data values |
 
 Open Sans has extended character support including accented characters (àåéîõǿü) and is the standard across all WBG digital products.
 
@@ -347,7 +347,7 @@ const openSans = Open_Sans({
 - **Headings:** Bold (700)
 - **Subheadings:** Medium (600)
 - **Body:** Regular (400)
-- Avoid stylization or decorative typefaces — Open Sans only
+- Avoid stylization or decorative typefaces; Open Sans only
 - All-caps labels should use letter-spacing for readability (`letter-spacing: 0.08em`)
 - Do not use `#009FDA` (WB Blue) for small body text — contrast fails WCAG AA. Use `#002244` or `#111827` for readable text
 
@@ -356,7 +356,7 @@ const openSans = Open_Sans({
 - Minimal, clean, and structured
 - Strong hierarchy and readability
 - Institutional, not decorative
-- Professional tone — avoid marketing copy; labels should be operational
+- Professional tone; avoid marketing copy, labels should be operational
 
 ---
 
@@ -421,7 +421,7 @@ Standard two-panel layout for WB data dashboards:
 
 ### Responsive Breakpoints
 
-This is primarily a **desktop tool** — dashboards are for analysts and program managers, not mobile users.
+This is primarily a **desktop tool**; dashboards are for analysts and program managers, not mobile users.
 
 | Breakpoint | Sidebar | Content | Priority |
 |------------|---------|---------|----------|
@@ -432,9 +432,9 @@ This is primarily a **desktop tool** — dashboards are for analysts and program
 
 ### Content Layout Patterns
 
-**KPI Strip** — 5 cards in a row, white background, `#009FDA` left-border accent (4px). One "feature" card (solid `#002244`, white text) for the primary metric.
+**KPI Strip:** 5 cards in a row, white background, `#009FDA` left-border accent (4px). One "feature" card (solid `#002244`, white text) for the primary metric.
 
-**Card Grid** — Standard: 3-column on ≥1280px, 2-column on 1024–1280px, 1-column on mobile.
+**Card Grid:** Standard: 3-column on ≥1280px, 2-column on 1024–1280px, 1-column on mobile.
 
 **Full-Width Sections** — Maps and wide charts should be full-width within the content area. Use `border-radius: 8px` and `box-shadow: 0 1px 3px rgba(0,0,0,0.08)` on card containers.
 
@@ -443,7 +443,7 @@ This is primarily a **desktop tool** — dashboards are for analysts and program
 - Clean, minimal composition
 - Strong focal point
 - Clear hierarchy: Title → Visual → Supporting text
-- White space is authority — when in doubt, subtract
+- White space is authority; when in doubt, subtract
 
 ---
 
@@ -518,26 +518,10 @@ Dashboard component patterns for WB data products.
 
 - No gradients on UI chrome
 - No decorative frames or borders around content cards
-- No marketing copy — labels should be operational
+- No marketing copy; labels should be operational
 - No loading spinners where skeleton loaders are possible
 - Do not load fonts from an external CDN
 
 ### WB Logo Treatment
 
-```
-○◐  WORLD BANK
-```
-
-Globe SVG (self-contained):
-
-```xml
-<svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-  <circle cx="10" cy="10" r="9" stroke="white" stroke-width="1.5"/>
-  <path d="M10 1 C7 4 7 16 10 19" stroke="white" stroke-width="1.5"/>
-  <path d="M10 1 C13 4 13 16 10 19" stroke="white" stroke-width="1.5"/>
-  <path d="M1 10 H19" stroke="white" stroke-width="1.5"/>
-  <path d="M2 6 H18 M2 14 H18" stroke="white" stroke-width="1"/>
-</svg>
-```
-
-"WORLD BANK" text: Open Sans 600, 11px, white, `letter-spacing: 0.1em`, all caps
+For official WB logo assets, usage rules, and approved file formats, see {doc}`icons`.

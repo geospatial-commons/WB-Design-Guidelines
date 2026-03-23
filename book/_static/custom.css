@@ -1,9 +1,9 @@
 /* World Bank Corporate Colors - Knowledge Management Palette */
 
-/* Hide the "auto" theme option - only show light/dark */
-.theme-switch-button[data-theme="auto"],
-button[data-theme="auto"],
-.bd-theme-switcher button:nth-child(3) {
+/* Hide the theme switcher entirely — light mode only */
+.theme-switch-button,
+button.theme-switch-button,
+.pst-navbar-icon.theme-switch-button {
     display: none !important;
 }
 
