@@ -106,6 +106,34 @@
         { name: 'Active',     hex: '#009FDA' },
         { name: 'Background', hex: '#BFBFBF' }
       ]
+    },
+    {
+      id: 'rag-status',
+      name: 'RAG Status',
+      type: 'categorical',
+      colorblindSafe: false,
+      usage: 'Red-Amber-Green for status tables and KPI indicators. Not for charts.',
+      colors: [
+        { name: 'Red: Critical',  hex: '#C0392B' },
+        { name: 'Amber: Caution', hex: '#D35400' },
+        { name: 'Green: On track',hex: '#27AE60' }
+      ]
+    },
+    {
+      id: 'rag-diverging',
+      name: 'RAG Diverging',
+      type: 'diverging',
+      colorblindSafe: false,
+      usage: 'Red-to-green diverging scale for risk/performance maps and heatmaps. Darkest red = critical; darkest green = exceeding.',
+      colors: [
+        { name: 'Critical',  hex: '#C0392B' },
+        { name: 'High risk', hex: '#E74C3C' },
+        { name: 'Elevated',  hex: '#F39C12' },
+        { name: 'Neutral',   hex: '#F7F8FA' },
+        { name: 'Improving', hex: '#82C341' },
+        { name: 'On track',  hex: '#27AE60' },
+        { name: 'Exceeding', hex: '#1A7A42' }
+      ]
     }
   ];
 

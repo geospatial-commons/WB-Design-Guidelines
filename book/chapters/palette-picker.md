@@ -61,6 +61,7 @@ Static reference table for non-interactive environments.
 | Alternative Categorical | `#12436D` `#28A197` `#801650` `#F46A25` `#3D3D3D` `#A285D1` | Yes |
 | WB Duo | `#002244` `#F7B841` | Yes |
 | WB Focus / Highlight | `#009FDA` (active) `#BFBFBF` (background) | Yes |
+| RAG Status | `#C0392B` `#D35400` `#27AE60` | No |
 
 ### Sequential
 
@@ -74,6 +75,7 @@ Static reference table for non-interactive environments.
 | Palette | Colors (negative → neutral → positive) | Colorblind-safe |
 |---------|----------------------------------------|-----------------|
 | WB Blue–Yellow Diverging | `#002244` `#336D8E` `#99B6C7` `#F7F8FA` `#FCE3B3` `#F9CD7A` `#F7B841` | Yes |
+| RAG Diverging | `#C0392B` `#E74C3C` `#F39C12` `#F7F8FA` `#82C341` `#27AE60` `#1A7A42` | No |
 
 ---
 

@@ -6,12 +6,12 @@ Icon assets for World Bank dashboards and data products.
 
 | Set | Format | Browse |
 |-----|--------|--------|
-| **WB Logos** (36 files) | PNG | [Browse on GitHub →](https://github.com/worldbank/wb-design-guidelines/tree/main/icons/wb-logos) |
-| **Data Hub** (5 files) | PNG | [Browse on GitHub →](https://github.com/worldbank/wb-design-guidelines/tree/main/icons/hub) |
-| **WB Scorecard Goals** (15 SVGs) | SVG | [Browse on GitHub →](https://github.com/worldbank/wb-design-guidelines/tree/main/icons/scorecard) |
-| **OCHA Box Icons** (1,461 files) | PNG | [Browse on GitHub →](https://github.com/worldbank/wb-design-guidelines/tree/main/icons/ocha-box-icons) |
-| **OCHA White SVG** (387 files) | SVG | [Browse on GitHub →](https://github.com/worldbank/wb-design-guidelines/tree/main/icons/ocha-white-svg) |
-| **OCHA Humanitarian Icons v16** (464 files) | SVG + PNG | [Browse on GitHub →](https://github.com/worldbank/wb-design-guidelines/tree/main/icons/ocha-humanitarian-icons-16) |
+| **WB Logos** (36 files) | PNG | [Browse on GitHub →](https://github.com/geospatial-commons/WB-Design-Guidelines/tree/main/icons/wb-logos) |
+| **Data Hub** (5 files) | PNG | [Browse on GitHub →](https://github.com/geospatial-commons/WB-Design-Guidelines/tree/main/icons/hub) |
+| **WB Scorecard Goals** (15 SVGs) | SVG | [Browse on GitHub →](https://github.com/geospatial-commons/WB-Design-Guidelines/tree/main/icons/scorecard) |
+| **OCHA Box Icons** (1,461 files) | PNG | [Browse on GitHub →](https://github.com/geospatial-commons/WB-Design-Guidelines/tree/main/icons/ocha-box-icons) |
+| **OCHA White SVG** (387 files) | SVG | [Browse on GitHub →](https://github.com/geospatial-commons/WB-Design-Guidelines/tree/main/icons/ocha-white-svg) |
+| **OCHA Humanitarian Icons v16** (464 files) | SVG + PNG | [Browse on GitHub →](https://github.com/geospatial-commons/WB-Design-Guidelines/tree/main/icons/ocha-humanitarian-icons-16) |
 
 ---
 
@@ -19,13 +19,13 @@ Icon assets for World Bank dashboards and data products.
 
 Official WBG logo assets organized by layout and color variant. Source: WBG Brand Guidelines.
 
-[Browse WB Logos on GitHub →](https://github.com/worldbank/wb-design-guidelines/tree/main/icons/wb-logos)
+[Browse WB Logos on GitHub →](https://github.com/geospatial-commons/WB-Design-Guidelines/tree/main/icons/wb-logos)
 
 | Subfolder | Description |
 |-----------|-------------|
-| [`vertical/`](https://github.com/worldbank/wb-design-guidelines/tree/main/icons/wb-logos/vertical) | Globe + "THE WORLD BANK" stacked layout |
-| [`horizontal/`](https://github.com/worldbank/wb-design-guidelines/tree/main/icons/wb-logos/horizontal) | Globe + "THE WORLD BANK" side-by-side layout |
-| [`globe/`](https://github.com/worldbank/wb-design-guidelines/tree/main/icons/wb-logos/globe) | Globe mark only, no text |
+| [`vertical/`](https://github.com/geospatial-commons/WB-Design-Guidelines/tree/main/icons/wb-logos/vertical) | Globe + "THE WORLD BANK" stacked layout |
+| [`horizontal/`](https://github.com/geospatial-commons/WB-Design-Guidelines/tree/main/icons/wb-logos/horizontal) | Globe + "THE WORLD BANK" side-by-side layout |
+| [`globe/`](https://github.com/geospatial-commons/WB-Design-Guidelines/tree/main/icons/wb-logos/globe) | Globe mark only, no text |
 
 Each has `color/`, `white/`, `black/`, and `grayscale/` variants. Each variant ships in 3 resolutions: `-web`, standard, and `-high`.
 
@@ -144,7 +144,7 @@ Each has `color/`, `white/`, `black/`, and `grayscale/` variants. Each variant s
 
 </div>
 
-[Download all scorecard SVGs on GitHub →](https://github.com/worldbank/wb-design-guidelines/tree/main/icons/scorecard)
+[Download all scorecard SVGs on GitHub →](https://github.com/geospatial-commons/WB-Design-Guidelines/tree/main/icons/scorecard)
 
 ---
 
@@ -152,9 +152,9 @@ Each has `color/`, `white/`, `black/`, and `grayscale/` variants. Each variant s
 
 Three separate OCHA releases are kept here as distinct folders:
 
-- **[ocha-box-icons/](https://github.com/worldbank/wb-design-guidelines/tree/main/icons/ocha-box-icons)** — Activity-focused icons, each available in 32px, 64px, and 100px sizes, with standard and blue-box style variants. 1,461 files.
-- **[ocha-white-svg/](https://github.com/worldbank/wb-design-guidelines/tree/main/icons/ocha-white-svg)** — Full OCHA humanitarian icon library in white SVG format. 387 files.
-- **[ocha-humanitarian-icons-16/](https://github.com/worldbank/wb-design-guidelines/tree/main/icons/ocha-humanitarian-icons-16)** — OCHA humanitarian icon set v16, available as both SVG and PNG. 464 files.
+- **[ocha-box-icons/](https://github.com/geospatial-commons/WB-Design-Guidelines/tree/main/icons/ocha-box-icons)** — Activity-focused icons, each available in 32px, 64px, and 100px sizes, with standard and blue-box style variants. 1,461 files.
+- **[ocha-white-svg/](https://github.com/geospatial-commons/WB-Design-Guidelines/tree/main/icons/ocha-white-svg)** — Full OCHA humanitarian icon library in white SVG format. 387 files.
+- **[ocha-humanitarian-icons-16/](https://github.com/geospatial-commons/WB-Design-Guidelines/tree/main/icons/ocha-humanitarian-icons-16)** — OCHA humanitarian icon set v16, available as both SVG and PNG. 464 files.
 
 ---
 
