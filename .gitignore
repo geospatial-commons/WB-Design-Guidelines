@@ -42,3 +42,4 @@ Desktop.ini
 .coverage
 htmlcov/
 .mypy_cache/
+.gstack/

@@ -41,8 +41,6 @@ For the UK Gov Analysis Function reference palettes (general-purpose accessible 
     <p style="color:#9CA3AF;font-size:13px;">Loading palettes&hellip;</p>
   </div>
 
-  <!-- Toast notification -->
-  <div id="pp-toast" class="pp-toast" role="status" aria-live="polite"></div>
 
 </div>
 ```

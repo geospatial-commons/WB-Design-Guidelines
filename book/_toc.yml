@@ -9,6 +9,7 @@ parts:
     chapters:
       - file: chapters/data-viz
       - file: chapters/palette-picker
+      - file: chapters/gallery
   - caption: Icons
     chapters:
       - file: chapters/icons

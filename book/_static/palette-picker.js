@@ -142,40 +142,15 @@
   // ============================================================
   var BAR_HEIGHTS = [75, 55, 90, 40, 70, 50];
 
-  // ============================================================
-  // CLIPBOARD
-  // ============================================================
-  function copyToClipboard(text) {
-    if (navigator.clipboard && navigator.clipboard.writeText) {
-      return navigator.clipboard.writeText(text);
+  // Utilities are provided by wb-utils.js via window.WB
+  var showToast = function (msg) { window.WB && window.WB.showToast(msg); };
+  var copyToClipboard = function (text, successMsg) {
+    if (window.WB) {
+      window.WB.copyToClipboard(text, successMsg);
+      return { then: function (fn) { return fn && fn(); } };
     }
-    // Fallback for local file:// builds
-    var ta = document.createElement('textarea');
-    ta.value = text;
-    ta.style.position = 'fixed';
-    ta.style.top = '-9999px';
-    document.body.appendChild(ta);
-    ta.focus();
-    ta.select();
-    try { document.execCommand('copy'); } catch (e) {}
-    document.body.removeChild(ta);
-    return Promise.resolve();
-  }
-
-  // ============================================================
-  // TOAST
-  // ============================================================
-  var toastTimer = null;
-  function showToast(msg) {
-    var toast = document.getElementById('pp-toast');
-    if (!toast) return;
-    toast.textContent = msg;
-    toast.classList.add('pp-toast-visible');
-    if (toastTimer) clearTimeout(toastTimer);
-    toastTimer = setTimeout(function () {
-      toast.classList.remove('pp-toast-visible');
-    }, 1500);
-  }
+    return { then: function () {} };
+  };
 
   // ============================================================
   // CODE SNIPPET GENERATION
@@ -432,9 +407,9 @@
     return card;
   }
 
-  function escHtml(s) {
-    return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-  }
+  var escHtml = function (s) {
+    return window.WB ? window.WB.escHtml(s) : String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  };
 
   // ============================================================
   // RENDER ALL CARDS
@@ -523,17 +498,13 @@
     // Copy individual hex chip
     if (t.classList.contains('pp-hex-chip') && t.dataset.copy) {
       var hex = t.dataset.copy;
-      copyToClipboard(hex).then(function () {
-        showToast('Copied ' + hex);
-      });
+      copyToClipboard(hex, 'Copied ' + hex);
       return;
     }
 
     // Copy swatch (clicking a swatch color block)
     if (t.classList.contains('pp-swatch') && t.dataset.hex) {
-      copyToClipboard(t.dataset.hex).then(function () {
-        showToast('Copied ' + t.dataset.hex);
-      });
+      copyToClipboard(t.dataset.hex, 'Copied ' + t.dataset.hex);
       return;
     }
 
@@ -543,9 +514,7 @@
       var palette = WB_PALETTES.find(function (p) { return p.id === pid; });
       if (palette) {
         var snips = generateSnippets(palette);
-        copyToClipboard(snips.hexArray).then(function () {
-          showToast('Copied hex array!');
-        });
+        copyToClipboard(snips.hexArray, 'Copied hex array!');
       }
       return;
     }

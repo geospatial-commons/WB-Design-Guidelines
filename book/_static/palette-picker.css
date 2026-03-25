@@ -340,7 +340,30 @@
   color: #1F2937;
 }
 
-/* ---- Toast ---- */
+/* ---- Toast (shared via wb-utils.js) ---- */
+.wb-toast {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%) translateY(12px);
+  background: #111827;
+  color: white;
+  font-size: 13px;
+  padding: 8px 18px;
+  border-radius: 20px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s, transform 0.2s;
+  z-index: 1000;
+  white-space: nowrap;
+}
+
+.wb-toast.wb-toast-visible {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* ---- Toast (legacy class, kept for palette-picker.css compatibility) ---- */
 .pp-toast {
   position: fixed;
   bottom: 24px;
