@@ -114,9 +114,9 @@
       colorblindSafe: false,
       usage: 'Red-Amber-Green for status tables and KPI indicators. Not for charts.',
       colors: [
-        { name: 'Red: Critical',  hex: '#C0392B' },
-        { name: 'Amber: Caution', hex: '#D35400' },
-        { name: 'Green: On track',hex: '#27AE60' }
+        { name: 'High: Critical',  hex: '#D73027' },
+        { name: 'Medium: Caution', hex: '#FFFFBF' },
+        { name: 'Low: On track',   hex: '#1A9850' }
       ]
     },
     {
@@ -124,15 +124,15 @@
       name: 'RAG Diverging',
       type: 'diverging',
       colorblindSafe: false,
-      usage: 'Red-to-green diverging scale for risk/performance maps and heatmaps. Darkest red = critical; darkest green = exceeding.',
+      usage: 'Risk/hazard diverging scale for choropleths and heatmaps. ColorBrewer RdYlGn 7-class.',
       colors: [
-        { name: 'Critical',  hex: '#C0392B' },
-        { name: 'High risk', hex: '#E74C3C' },
-        { name: 'Elevated',  hex: '#F39C12' },
-        { name: 'Neutral',   hex: '#F7F8FA' },
-        { name: 'Improving', hex: '#82C341' },
-        { name: 'On track',  hex: '#27AE60' },
-        { name: 'Exceeding', hex: '#1A7A42' }
+        { name: 'Critical',        hex: '#D73027' },
+        { name: 'High risk',       hex: '#FC8D59' },
+        { name: 'Elevated',        hex: '#FEE08B' },
+        { name: 'Neutral',         hex: '#FFFFBF' },
+        { name: 'Improving',       hex: '#D9EF8B' },
+        { name: 'On track',        hex: '#91CF60' },
+        { name: 'Exceeding',       hex: '#1A9850' }
       ]
     }
   ];
