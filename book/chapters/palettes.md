@@ -1,93 +1,49 @@
-# Data Visualization
+# Color Palettes
 
-Color palettes and chart guidelines for WB data products. Palettes based on the **UK Government Analysis Function** color system; purpose-built for institutional dashboards, colorblind-safe, and WCAG-compliant.
-
-> **Looking for WB-branded palettes with copy-paste code?** See {doc}`palette-picker` for an interactive palette finder using WB brand colors, with snippets for Plotly, Matplotlib, ggplot2, and CSS.
-
-> **Why not standard WB brand colors here?** The WB vertical palettes are single-hue thematic identities, not designed for multi-category chart comparison. The UK Gov palettes solve the same problem (institutional trust, accessibility) and anchor in navy, visually compatible with WB's `#002244`.
-
-**Source:** [UK Government Analysis Function: Data visualisation: colours in charts](https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-colours-in-charts/)
+Pick a WB palette, copy the code. Filter by type, preview colors, and grab ready-to-paste snippets for Plotly, Matplotlib, ggplot2, or CSS.
 
 ---
 
-## Color Palettes
+## Palette Picker
 
-Click any swatch to copy the hex code.
+1. **Filter** by palette type using the buttons below, or enable **Colorblind-safe only**
+2. **Click any color swatch or hex chip** to copy that hex value to your clipboard
+3. **Click "Copy hex array"** to copy a ready-to-paste Python list
+4. **Click "Code snippets"** to expand copy-paste code for Plotly, Matplotlib, ggplot2, or CSS
 
-### Categorical Palette
+```{raw} html
+<div id="palette-picker-root">
 
-For data divided into named groups (bar charts, line charts, pie charts, maps with discrete categories).
+  <!-- Filter bar -->
+  <div class="pp-filters">
+    <span class="pp-filter-label">Type:</span>
+    <button class="pp-filter-btn pp-active" data-type="all">All</button>
+    <button class="pp-filter-btn" data-type="categorical">Categorical</button>
+    <button class="pp-filter-btn" data-type="sequential">Sequential</button>
+    <button class="pp-filter-btn" data-type="diverging">Diverging</button>
+    <label class="pp-cb-toggle">
+      <input type="checkbox" id="pp-colorblind-toggle">
+      Colorblind-safe only
+    </label>
+  </div>
 
-<div style="display:grid; grid-template-columns:repeat(6,1fr); gap:4px; margin:12px 0;">
-  <div class="wb-swatch" data-hex="#12436D" style="background-color:#12436D; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
-    <span class="wb-swatch-hex" style="font-family:monospace;font-size:12px;display:block;font-weight:600;">#12436D</span>
-    <span class="wb-swatch-name" style="display:block;font-size:11px;margin-top:2px;">Dark blue</span>
-    <span class="wb-swatch-badges" style="display:block;margin-top:6px;"></span>
+  <!-- Palette cards rendered by JS -->
+  <div id="pp-palette-list">
+    <p style="color:#9CA3AF;font-size:13px;">Loading palettes&hellip;</p>
   </div>
-  <div class="wb-swatch" data-hex="#28A197" style="background-color:#28A197; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
-    <span class="wb-swatch-hex" style="font-family:monospace;font-size:12px;display:block;font-weight:600;">#28A197</span>
-    <span class="wb-swatch-name" style="display:block;font-size:11px;margin-top:2px;">Turquoise</span>
-    <span class="wb-swatch-badges" style="display:block;margin-top:6px;"></span>
-  </div>
-  <div class="wb-swatch" data-hex="#801650" style="background-color:#801650; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
-    <span class="wb-swatch-hex" style="font-family:monospace;font-size:12px;display:block;font-weight:600;">#801650</span>
-    <span class="wb-swatch-name" style="display:block;font-size:11px;margin-top:2px;">Dark pink</span>
-    <span class="wb-swatch-badges" style="display:block;margin-top:6px;"></span>
-  </div>
-  <div class="wb-swatch" data-hex="#F46A25" style="background-color:#F46A25; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
-    <span class="wb-swatch-hex" style="font-family:monospace;font-size:12px;display:block;font-weight:600;">#F46A25</span>
-    <span class="wb-swatch-name" style="display:block;font-size:11px;margin-top:2px;">Orange</span>
-    <span class="wb-swatch-badges" style="display:block;margin-top:6px;"></span>
-  </div>
-  <div class="wb-swatch" data-hex="#3D3D3D" style="background-color:#3D3D3D; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
-    <span class="wb-swatch-hex" style="font-family:monospace;font-size:12px;display:block;font-weight:600;">#3D3D3D</span>
-    <span class="wb-swatch-name" style="display:block;font-size:11px;margin-top:2px;">Dark grey</span>
-    <span class="wb-swatch-badges" style="display:block;margin-top:6px;"></span>
-  </div>
-  <div class="wb-swatch" data-hex="#A285D1" style="background-color:#A285D1; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
-    <span class="wb-swatch-hex" style="font-family:monospace;font-size:12px;display:block;font-weight:600;">#A285D1</span>
-    <span class="wb-swatch-name" style="display:block;font-size:11px;margin-top:2px;">Light purple</span>
-    <span class="wb-swatch-badges" style="display:block;margin-top:6px;"></span>
-  </div>
+
 </div>
+```
 
-| # | Name | Hex | When to use |
-|---|------|-----|-------------|
-| 1 | Dark blue | `#12436D` | First / primary series (highest contrast) |
-| 2 | Turquoise | `#28A197` | Second series |
-| 3 | Dark pink | `#801650` | Third series |
-| 4 | Orange | `#F46A25` | Fourth series |
-| 5 | Dark grey | `#3D3D3D` | Fifth; use sparingly |
-| 6 | Light purple | `#A285D1` | Sixth; use sparingly |
+---
 
-**Rules:**
-- Use colors in order; do not skip or rearrange
-- **Limit to 4 colors** wherever possible. If you need 5–6, consider restructuring the chart
-- All adjacent pairs have a contrast ratio of at least 3:1
-- Colorblind-safe and renders legibly in greyscale
-- Never rely on color alone; label lines/bars directly
+## Palette Reference
 
-#### Duo (two-series charts)
+### WB Categorical (default)
 
-When comparing exactly two categories, use this high-contrast pair:
+WB brand colors arranged for multi-category chart comparison. Use when your product requires visual alignment with WB brand identity.
 
-<div style="display:grid; grid-template-columns:repeat(2,1fr); gap:4px; margin:12px 0;">
-  <div class="wb-swatch" data-hex="#12436D" style="background-color:#12436D; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
-    <span class="wb-swatch-hex" style="font-family:monospace;font-size:12px;display:block;font-weight:600;">#12436D</span>
-    <span class="wb-swatch-name" style="display:block;font-size:11px;margin-top:2px;">Dark blue</span>
-    <span class="wb-swatch-badges" style="display:block;margin-top:6px;"></span>
-  </div>
-  <div class="wb-swatch" data-hex="#F46A25" style="background-color:#F46A25; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
-    <span class="wb-swatch-hex" style="font-family:monospace;font-size:12px;display:block;font-weight:600;">#F46A25</span>
-    <span class="wb-swatch-name" style="display:block;font-size:11px;margin-top:2px;">Orange</span>
-    <span class="wb-swatch-badges" style="display:block;margin-top:6px;"></span>
-  </div>
-</div>
-
-### WB Categorical Palette
-
-WB brand colors arranged for multi-category chart comparison. Use when your product requires visual alignment with WB brand identity. See {doc}`palette-picker` for copy-paste code snippets.
-
+```{raw} html
 <div style="display:grid; grid-template-columns:repeat(6,1fr); gap:4px; margin:12px 0;">
   <div class="wb-swatch" data-hex="#002244" style="background-color:#002244; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
     <span class="wb-swatch-hex" style="font-family:monospace;font-size:12px;display:block;font-weight:600;">#002244</span>
@@ -120,6 +76,7 @@ WB brand colors arranged for multi-category chart comparison. Use when your prod
     <span class="wb-swatch-badges" style="display:block;margin-top:6px;"></span>
   </div>
 </div>
+```
 
 | # | Name | Hex | When to use |
 |---|------|-----|-------------|
@@ -130,12 +87,90 @@ WB brand colors arranged for multi-category chart comparison. Use when your prod
 | 5 | WB Teal | `#00A996` | Fifth; use sparingly |
 | 6 | Infrastructure Red | `#91302F` | Sixth; use sparingly |
 
+**Rules:**
+- Use colors in order; do not skip or rearrange
+- **Limit to 4 colors** wherever possible. If you need 5–6, consider restructuring the chart
+- Colorblind-safe and renders legibly in greyscale
+- Never rely on color alone; label lines/bars directly
+
+---
+
+### Alternative Categorical (UK Gov Analysis Function)
+
+UK Government Analysis Function palette — institutional dashboards requiring highest colorblind safety and greyscale legibility. All adjacent pairs have a contrast ratio of at least 3:1.
+
+**Source:** [UK Government Analysis Function: Data visualisation: colours in charts](https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-colours-in-charts/)
+
+```{raw} html
+<div style="display:grid; grid-template-columns:repeat(6,1fr); gap:4px; margin:12px 0;">
+  <div class="wb-swatch" data-hex="#12436D" style="background-color:#12436D; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
+    <span class="wb-swatch-hex" style="font-family:monospace;font-size:12px;display:block;font-weight:600;">#12436D</span>
+    <span class="wb-swatch-name" style="display:block;font-size:11px;margin-top:2px;">Dark blue</span>
+    <span class="wb-swatch-badges" style="display:block;margin-top:6px;"></span>
+  </div>
+  <div class="wb-swatch" data-hex="#28A197" style="background-color:#28A197; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
+    <span class="wb-swatch-hex" style="font-family:monospace;font-size:12px;display:block;font-weight:600;">#28A197</span>
+    <span class="wb-swatch-name" style="display:block;font-size:11px;margin-top:2px;">Turquoise</span>
+    <span class="wb-swatch-badges" style="display:block;margin-top:6px;"></span>
+  </div>
+  <div class="wb-swatch" data-hex="#801650" style="background-color:#801650; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
+    <span class="wb-swatch-hex" style="font-family:monospace;font-size:12px;display:block;font-weight:600;">#801650</span>
+    <span class="wb-swatch-name" style="display:block;font-size:11px;margin-top:2px;">Dark pink</span>
+    <span class="wb-swatch-badges" style="display:block;margin-top:6px;"></span>
+  </div>
+  <div class="wb-swatch" data-hex="#F46A25" style="background-color:#F46A25; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
+    <span class="wb-swatch-hex" style="font-family:monospace;font-size:12px;display:block;font-weight:600;">#F46A25</span>
+    <span class="wb-swatch-name" style="display:block;font-size:11px;margin-top:2px;">Orange</span>
+    <span class="wb-swatch-badges" style="display:block;margin-top:6px;"></span>
+  </div>
+  <div class="wb-swatch" data-hex="#3D3D3D" style="background-color:#3D3D3D; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
+    <span class="wb-swatch-hex" style="font-family:monospace;font-size:12px;display:block;font-weight:600;">#3D3D3D</span>
+    <span class="wb-swatch-name" style="display:block;font-size:11px;margin-top:2px;">Dark grey</span>
+    <span class="wb-swatch-badges" style="display:block;margin-top:6px;"></span>
+  </div>
+  <div class="wb-swatch" data-hex="#A285D1" style="background-color:#A285D1; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
+    <span class="wb-swatch-hex" style="font-family:monospace;font-size:12px;display:block;font-weight:600;">#A285D1</span>
+    <span class="wb-swatch-name" style="display:block;font-size:11px;margin-top:2px;">Light purple</span>
+    <span class="wb-swatch-badges" style="display:block;margin-top:6px;"></span>
+  </div>
+</div>
+```
+
+| # | Name | Hex | When to use |
+|---|------|-----|-------------|
+| 1 | Dark blue | `#12436D` | First / primary series (highest contrast) |
+| 2 | Turquoise | `#28A197` | Second series |
+| 3 | Dark pink | `#801650` | Third series |
+| 4 | Orange | `#F46A25` | Fourth series |
+| 5 | Dark grey | `#3D3D3D` | Fifth; use sparingly |
+| 6 | Light purple | `#A285D1` | Sixth; use sparingly |
+
+#### Duo (two-series charts)
+
+When comparing exactly two categories, use this high-contrast pair:
+
+```{raw} html
+<div style="display:grid; grid-template-columns:repeat(2,1fr); gap:4px; margin:12px 0;">
+  <div class="wb-swatch" data-hex="#12436D" style="background-color:#12436D; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
+    <span class="wb-swatch-hex" style="font-family:monospace;font-size:12px;display:block;font-weight:600;">#12436D</span>
+    <span class="wb-swatch-name" style="display:block;font-size:11px;margin-top:2px;">Dark blue</span>
+    <span class="wb-swatch-badges" style="display:block;margin-top:6px;"></span>
+  </div>
+  <div class="wb-swatch" data-hex="#F46A25" style="background-color:#F46A25; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
+    <span class="wb-swatch-hex" style="font-family:monospace;font-size:12px;display:block;font-weight:600;">#F46A25</span>
+    <span class="wb-swatch-name" style="display:block;font-size:11px;margin-top:2px;">Orange</span>
+    <span class="wb-swatch-badges" style="display:block;margin-top:6px;"></span>
+  </div>
+</div>
+```
+
 ---
 
 ### Sequential Palette
 
 For ordered/continuous data: rankings, intensity, magnitude. Use for choropleths, heatmaps, and single-metric bar charts where magnitude matters.
 
+```{raw} html
 <div style="display:grid; grid-template-columns:repeat(6,1fr); gap:4px; margin:12px 0;">
   <div class="wb-swatch" data-hex="#092135" style="background-color:#092135; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
     <span class="wb-swatch-hex" style="font-family:monospace;font-size:12px;display:block;font-weight:600;">#092135</span>
@@ -157,7 +192,7 @@ For ordered/continuous data: rankings, intensity, magnitude. Use for choropleths
     <span class="wb-swatch-name" style="display:block;font-size:11px;margin-top:2px;">Light blue</span>
     <span class="wb-swatch-badges" style="display:block;margin-top:6px;"></span>
   </div>
-  <div class="wb-swatch" data-hex="#ADD1F1" style="background-color:#ADD1F1; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.10);">
+  <div class="wb-swatch" data-hex="#ADD1F1" style="background-color:#ADD1F1; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
     <span class="wb-swatch-hex" style="font-family:monospace;font-size:12px;display:block;font-weight:600;">#ADD1F1</span>
     <span class="wb-swatch-name" style="display:block;font-size:11px;margin-top:2px;">Lightest blue</span>
     <span class="wb-swatch-badges" style="display:block;margin-top:6px;"></span>
@@ -168,6 +203,7 @@ For ordered/continuous data: rankings, intensity, magnitude. Use for choropleths
     <span class="wb-swatch-badges" style="display:block;margin-top:6px;"></span>
   </div>
 </div>
+```
 
 | Steps | Colors to use |
 |-------|---------------|
@@ -182,10 +218,13 @@ For ordered/continuous data: rankings, intensity, magnitude. Use for choropleths
 - For light-colored bars, add a visible border so bar size is legible without color
 - Always provide a data table or text description as an accessible alternative
 
+---
+
 ### Focus / Highlight Palette
 
 For drawing attention to a specific series or data point while de-emphasizing the rest.
 
+```{raw} html
 <div style="display:grid; grid-template-columns:repeat(2,1fr); gap:4px; margin:12px 0;">
   <div class="wb-swatch" data-hex="#12436D" style="background-color:#12436D; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
     <span class="wb-swatch-hex" style="font-family:monospace;font-size:12px;display:block;font-weight:600;">#12436D</span>
@@ -198,13 +237,17 @@ For drawing attention to a specific series or data point while de-emphasizing th
     <span class="wb-swatch-badges" style="display:block;margin-top:6px;"></span>
   </div>
 </div>
+```
 
 **Tip:** Make the focused element slightly thicker (line weight or bar outline) in addition to the color difference.
+
+---
 
 ### RAG / Status Colors
 
 Red-Amber-Green for status tables and KPI indicators. **Tables and scorecards only**; not for charts.
 
+```{raw} html
 <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:4px; margin:12px 0;">
   <div class="wb-swatch" data-hex="#D73027" style="background-color:#D73027; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
     <span class="wb-swatch-hex" style="font-family:monospace;font-size:12px;display:block;font-weight:600;">#D73027</span>
@@ -222,6 +265,7 @@ Red-Amber-Green for status tables and KPI indicators. **Tables and scorecards on
     <span class="wb-swatch-badges" style="display:block;margin-top:6px;"></span>
   </div>
 </div>
+```
 
 | Status | Hex | Notes |
 |--------|-----|-------|
@@ -229,8 +273,11 @@ Red-Amber-Green for status tables and KPI indicators. **Tables and scorecards on
 | Yellow | `#FFFFBF` | Caution / elevated |
 | Green | `#1A9850` | Normal / on track |
 
+---
+
 ### Chart Furniture Colors
 
+```{raw} html
 <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:4px; margin:12px 0;">
   <div class="wb-swatch" data-hex="#D9D9D9" style="background-color:#D9D9D9; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.12);">
     <span class="wb-swatch-hex" style="font-family:monospace;font-size:12px;display:block;font-weight:600;">#D9D9D9</span>
@@ -248,8 +295,11 @@ Red-Amber-Green for status tables and KPI indicators. **Tables and scorecards on
     <span class="wb-swatch-badges" style="display:block;margin-top:6px;"></span>
   </div>
 </div>
+```
 
-### Accessibility Rules
+---
+
+## Accessibility
 
 1. **Contrast:** Minimum 3:1 for graphic elements; 4.5:1 for text
 2. **Don't rely on color alone**; label lines directly, use patterns in addition to color where possible
@@ -263,52 +313,40 @@ Red-Amber-Green for status tables and KPI indicators. **Tables and scorecards on
 
 ---
 
-## Chart Guidelines
+## Quick Reference Table
 
-Styling standards for charts and maps in WB data products.
+### Categorical
 
-### Axes
+| Palette | Colors | Colorblind-safe |
+|---------|--------|-----------------|
+| WB Categorical | `#002244` `#009FDA` `#F7B841` `#872C8F` `#00A996` `#91302F` | Yes |
+| Alternative Categorical | `#12436D` `#28A197` `#801650` `#F46A25` `#3D3D3D` `#A285D1` | Yes |
+| WB Duo | `#002244` `#F7B841` | Yes |
+| WB Focus / Highlight | `#009FDA` (active) `#BFBFBF` (background) | Yes |
+| RAG Status | `#D73027` `#FFFFBF` `#1A9850` | No |
 
-- Axis lines: `#D9D9D9`, 1px; light, not dominant
-- Tick marks: omit or keep minimal
-- Labels: 12px, `#595959`, Open Sans 400
-- Y-axis label: horizontal where possible (avoid rotated text)
-- Start axes at zero for bar charts; do not truncate the baseline
+### Sequential
 
-### Gridlines
+| Palette | Colors (light → dark) | Colorblind-safe |
+|---------|----------------------|-----------------|
+| WB Blue Sequential | `#E8F5FC` `#7DCFED` `#009FDA` `#005F8A` `#002244` | Yes |
+| WB Teal Sequential | `#E6F7F5` `#7DD5CB` `#00A996` `#007A6E` `#003D38` | Yes |
 
-- Color: `#D9D9D9`; light grey
-- Style: dashed preferred
-- Gridlines should support reading, not dominate the chart
-- Horizontal gridlines only (no vertical gridlines in bar/line charts)
+### Diverging
 
-### Legends
+| Palette | Colors (negative → neutral → positive) | Colorblind-safe |
+|---------|----------------------------------------|-----------------|
+| WB Blue–Yellow Diverging | `#002244` `#336D8E` `#99B6C7` `#F7F8FA` `#FCE3B3` `#F9CD7A` `#F7B841` | Yes |
+| RAG Diverging | `#D73027` `#FC8D59` `#FEE08B` `#FFFFBF` `#D9EF8B` `#91CF60` `#1A9850` | No |
 
-- Position: right of chart (wide screens) or below the chart
-- Label format: match the data series label exactly
-- Swatch size: 12×12px minimum
-- Do not use legends when direct labeling is feasible; direct labels are clearer
+---
 
-### Tooltips
-
-- Background: white
-- Border: `1px solid #D9D9D9`
-- Font: 13px, `#111827`, Open Sans
-- Padding: 8px 12px
-- Show: series name + value + unit
-
-### Do's and Don'ts
-
-> **Phase 2:** Side-by-side correct/incorrect SVG chart examples will be added here: bar chart, choropleth, RAG table, and axis/gridline treatment.
-
-**Do:**
-- Label data directly on lines and bars where space allows
-- Use the sequential palette for single-metric continuous data (choropleths, heatmaps)
-- Use the categorical palette for multi-series comparison charts
-- Include a plain-text data table alongside all charts for accessibility
-
-**Don't:**
-- Use rainbow colors for categorical data; use the UK Gov palette in order
-- Invert sequential scales (darkest should always = highest)
-- Use gridlines heavier than the data itself
-- Rely on color alone to encode information
+```{raw} html
+<div class="pp-footer">
+  <strong>Scope:</strong> MENAAP Region &amp; Afghanistan country programs &middot;
+  Data visualization &amp; front-end development<br>
+  <strong>Note:</strong> These palettes are designed for data visualization, not for branding or print.
+  All palettes have been checked for WCAG AA contrast on white backgrounds.
+  Colorblind-safe palettes are distinguishable for deuteranopia and protanopia.
+</div>
+```

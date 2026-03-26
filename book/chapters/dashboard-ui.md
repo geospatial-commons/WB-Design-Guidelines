@@ -1,6 +1,11 @@
-# Design System
+# Dashboard UI
 
 WB visual and interaction standards for digital dashboards and data products. Sourced from the WBG Digital Look & Feel Style Guide and adapted for front-end development.
+
+:::{admonition} Looking for data visualization palettes?
+:class: tip
+This page covers dashboard UI styling (colors, typography, layout, components). For data visualization palettes with copy-paste code snippets, see {doc}`palettes`.
+:::
 
 ---
 
@@ -69,41 +74,13 @@ The practical color set for building WB dashboards. Click any swatch to copy the
   <button id="wb-export-json" style="background:#004972;color:white;border-radius:4px;padding:8px 16px;font-size:13px;font-family:'Open Sans',sans-serif;font-weight:600;border:none;cursor:pointer;">Download JSON</button>
 </div>
 
-### Status / RAG Colors
-
-Standard colors for risk indicators (Red-Amber-Green). These are universal alerting standards; do not modify.
-
-<div style="display:grid; grid-template-columns:repeat(3,1fr); gap:4px; margin:12px 0;">
-  <div class="wb-swatch" data-hex="#D73027" style="background-color:#D73027; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
-    <span class="wb-swatch-hex" style="font-family:monospace;font-size:12px;display:block;font-weight:600;">#D73027</span>
-    <span class="wb-swatch-name" style="display:block;font-size:11px;margin-top:2px;">rag-red</span>
-    <span class="wb-swatch-badges" style="display:block;margin-top:6px;"></span>
-  </div>
-  <div class="wb-swatch" data-hex="#FFFFBF" style="background-color:#FFFFBF; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.12);">
-    <span class="wb-swatch-hex" style="font-family:monospace;font-size:12px;display:block;font-weight:600;">#FFFFBF</span>
-    <span class="wb-swatch-name" style="display:block;font-size:11px;margin-top:2px;">rag-amber</span>
-    <span class="wb-swatch-badges" style="display:block;margin-top:6px;"></span>
-  </div>
-  <div class="wb-swatch" data-hex="#1A9850" style="background-color:#1A9850; padding:12px 16px; border-radius:6px; display:inline-flex; flex-direction:column; cursor:pointer; position:relative; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.08);">
-    <span class="wb-swatch-hex" style="font-family:monospace;font-size:12px;display:block;font-weight:600;">#1A9850</span>
-    <span class="wb-swatch-name" style="display:block;font-size:11px;margin-top:2px;">rag-green</span>
-    <span class="wb-swatch-badges" style="display:block;margin-top:6px;"></span>
-  </div>
-</div>
-
-| Token | Hex | Usage |
-|-------|-----|-------|
-| `rag-red` | `#D73027` | Critical / high risk |
-| `rag-amber` | `#FFFFBF` | Elevated / medium risk |
-| `rag-green` | `#1A9850` | Normal / low risk |
-
 > **Accessibility note:** `#009FDA` on white fails WCAG AA for small text (contrast ~2.7:1). Use `#009FDA` only for borders, backgrounds, icons, and large text (≥18px bold). Use `#002244` for all body text and labels.
 
 ### WB Vertical Brand Colors
 
 The official WBG palette organized by thematic vertical. Each vertical has a base color and 9 tints (10%–90%). Use **one vertical palette only** within a given asset; do not mix palettes.
 
-> **Data viz note:** These verticals are designed for thematic branding, not multi-category chart comparison. For charts and maps, see {doc}`data-viz`.
+> **Data viz note:** These verticals are designed for thematic branding, not multi-category chart comparison. For charts and maps, see {doc}`palettes`.
 
 #### People (Yellow): `#F7B841`
 

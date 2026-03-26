@@ -1,15 +1,9 @@
 # Table of contents
 format: jb-book
 root: intro
-parts:
-  - caption: Design System
-    chapters:
-      - file: chapters/design-system
-  - caption: Data Visualization
-    chapters:
-      - file: chapters/data-viz
-      - file: chapters/palette-picker
-      - file: chapters/gallery
-  - caption: Icons
-    chapters:
-      - file: chapters/icons
+chapters:
+  - file: chapters/gallery
+  - file: chapters/palettes
+  - file: chapters/chart-rules
+  - file: chapters/dashboard-ui
+  - file: chapters/icons

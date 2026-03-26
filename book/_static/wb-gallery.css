@@ -225,8 +225,8 @@
 /* ---- Map Section ---- */
 .wg-map-layout {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 24px;
+  grid-template-columns: 60% 40%;
+  gap: 16px;
   align-items: start;
   margin-bottom: 16px;
 }
@@ -242,7 +242,6 @@
   border: 1px solid #E5E7EB;
   border-radius: 6px;
   padding: 12px;
-  min-height: 280px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -251,7 +250,7 @@
 .wg-map-area svg {
   width: 100%;
   height: auto;
-  max-height: 320px;
+  display: block;
 }
 
 /* ---- Ramp Selector Rows ---- */
@@ -261,7 +260,6 @@
   border: 1px solid #E5E7EB;
   border-radius: 6px;
   overflow: hidden;
-  margin-bottom: 16px;
 }
 
 .wg-ramp-row {

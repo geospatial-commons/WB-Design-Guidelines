@@ -67,12 +67,11 @@
       .replace(/"/g, '&quot;');
   }
 
-  // Expose on window.WB
-  window.WB = {
-    showToast: showToast,
-    copyToClipboard: copyToClipboard,
-    escHtml: escHtml
-  };
+  // Expose on window.WB (merge, don't overwrite — wb-palettes.js loads first)
+  window.WB = window.WB || {};
+  window.WB.showToast = showToast;
+  window.WB.copyToClipboard = copyToClipboard;
+  window.WB.escHtml = escHtml;
 
   // Inject toast container when DOM is ready
   if (document.readyState === 'loading') {

@@ -1,34 +1,24 @@
 # World Bank Data Viz Guidance
 
-Welcome to the World Bank Data Viz Guidance, the single source of truth for building WB dashboards and data products.
+The single source of truth for building WB dashboards and data products. Interactive tools, copy-paste code, and styling standards.
 
-This guide documents the visual and interaction standards used across WB front-end tools: color systems, typography, layout patterns, component specs, data visualization palettes, and icon assets.
+## What do you need?
 
-## What is this?
-
-A reference for anyone building WB-branded digital products; whether that's an ArcGIS dashboard, a Next.js app, a Python chart, or a static report. The guidelines are derived from the WBG Digital Look & Feel Style Guide and adapted for practical front-end use.
+| Task | Where to go |
+|------|-------------|
+| **See examples** of WB-styled charts and maps | {doc}`chapters/gallery` |
+| **Pick a color palette** and copy code for Plotly, Matplotlib, or ggplot2 | {doc}`chapters/palettes` |
+| **Style a chart** — axes, gridlines, legends, tooltips, do's and don'ts | {doc}`chapters/chart-rules` |
+| **Build a dashboard** — UI colors, typography, layout, components | {doc}`chapters/dashboard-ui` |
+| **Get icons** — WB logos, scorecard icons, OCHA humanitarian icons | {doc}`chapters/icons` |
 
 ## Who is this for?
 
 | Audience | Use Case |
 |----------|----------|
-| **Front-end developers** | Implementing WB-branded UI components, dashboards, and web apps |
 | **Data scientists** | Styling Python/R charts and maps to WB standards |
+| **Front-end developers** | Implementing WB-branded UI components, dashboards, and web apps |
 | **Dashboard builders** | Configuring ArcGIS, Power BI, or Tableau products within WB guidelines |
-
-## Guide Structure
-
-- **{doc}`chapters/design-system`**: Colors (core palette, RAG, vertical brand), typography, layout & spacing, components
-- **{doc}`chapters/data-viz`**: Data visualization color palettes (categorical, sequential, RAG, chart furniture) and chart guidelines
-- **{doc}`chapters/palette-picker`**: Interactive palette finder with copy-paste snippets for Plotly, Matplotlib, ggplot2, and CSS
-- **{doc}`chapters/icons`**: WB logos, scorecard icons, OCHA humanitarian icon sets
-
-<div style="margin-top:24px;">
-  <a href="chapters/design-system.html"
-     style="background:#004972;color:white;border-radius:4px;padding:8px 16px;font-size:13px;font-family:'Open Sans',sans-serif;font-weight:600;text-decoration:none;display:inline-block;">
-    Start with Design System →
-  </a>
-</div>
 
 ## Contact
 

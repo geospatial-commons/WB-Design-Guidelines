@@ -4,10 +4,11 @@
    Only initialises on pages containing #wb-gallery-root.
 
    Load order (enforced by _config.yml html_js_files):
-     1. wb-utils.js   — window.WB.* utilities
-     2. palette-picker.js — palette picker (unrelated)
-     3. wb-gallery.js — this file
-     4. plotly-basic CDN — loaded by _config.yml html_js_files
+     1. wb-palettes.js — window.WB.palettes (shared palette data)
+     2. wb-utils.js    — window.WB.* utilities
+     3. palette-picker.js — palette picker
+     4. wb-gallery.js  — this file
+     5. plotly-basic CDN — loaded by _config.yml html_js_files
    ============================================================= */
 
 (function () {
@@ -58,10 +59,11 @@
     },
     {
       id: 'wb-diverging-blue-yellow',
-      name: 'WB Blue–Yellow Diverging',
-      colors: ['#002244', '#336D8E', '#99B6C7', '#F7F8FA', '#F9CD7A']
+      name: 'WB Blue\u2013Yellow Diverging',
+      colors: ['#002244', '#336D8E', '#99B6C7', '#F7B841', '#F9CD7A', '#FDE8B3', '#F7F8FA']
     }
   ];
+
 
   // ============================================================
   // CHART CONFIGS

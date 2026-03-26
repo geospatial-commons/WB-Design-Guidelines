@@ -1,15 +1,19 @@
-# WB Gallery
+# Visualization Gallery
 
-Interactive chart and map examples with World Bank color palettes. Select a chart type, pick a palette, and copy the Python code.
+Interactive chart and map examples with World Bank color palettes. Pick a palette, select a chart type, and copy the Python code.
 
 ---
 
 ## Chart Examples
 
-Select a chart type, pick a WB palette, and copy the Plotly Python code.
-
 ```{raw} html
 <div id="wb-gallery-root">
+
+  <!-- Palette chip selector — above chart type tabs -->
+  <div class="wg-palette-selector">
+    <div class="wg-palette-label">Palette</div>
+    <div class="wg-chips" id="wg-palette-chips" role="listbox" aria-label="Select palette"></div>
+  </div>
 
   <!-- Chart type tabs -->
   <div class="wg-tabs" role="tablist" aria-label="Chart type">
@@ -26,7 +30,7 @@ Select a chart type, pick a WB palette, and copy the Plotly Python code.
       <div id="wg-chart-container">
         <div class="wg-chart-skeleton">Loading chart&hellip;</div>
       </div>
-      <p class="wg-chart-hint" id="wg-chart-hint">&larr; Select a palette below to update this chart</p>
+      <p class="wg-chart-hint" id="wg-chart-hint">&larr; Select a chart type above to update</p>
     </div>
 
     <!-- Code pane -->
@@ -40,12 +44,6 @@ Select a chart type, pick a WB palette, and copy the Plotly Python code.
 
   </div><!-- /.wg-chart-layout -->
 
-  <!-- Palette chip selector -->
-  <div class="wg-palette-selector">
-    <div class="wg-palette-label">Palette</div>
-    <div class="wg-chips" id="wg-palette-chips" role="listbox" aria-label="Select palette"></div>
-  </div>
-
 </div><!-- /#wb-gallery-root -->
 ```
 
@@ -58,7 +56,15 @@ Select a WB color ramp to preview it on a sample choropleth map. Copy the Plotly
 ```{raw} html
 <div id="wg-map-section">
 
-  <!-- Two-column: map + ramp selector -->
+  <!-- Ramp selector — above the map, consistent with palette selector above charts -->
+  <div class="wg-palette-selector" style="margin-bottom:16px;">
+    <div class="wg-palette-label">Color Ramp</div>
+    <div class="wg-ramp-selector" id="wg-ramp-rows" role="radiogroup" aria-label="Select color ramp">
+      <!-- Populated by wb-gallery.js -->
+    </div>
+  </div>
+
+  <!-- Two-column: map left, code right -->
   <div class="wg-map-layout">
 
     <!-- SVG map — Jordan governorates, Natural Earth data, grouped into 5 population-density bins -->
@@ -80,14 +86,9 @@ Select a WB color ramp to preview it on a sample choropleth map. Copy the Plotly
       </svg>
     </div>
 
-    <!-- Ramp selector + code -->
-    <div>
-      <div class="wg-palette-label" style="margin-bottom:8px;">Color Ramp</div>
-      <div class="wg-ramp-selector" id="wg-ramp-rows" role="radiogroup" aria-label="Select color ramp">
-        <!-- Populated by wb-gallery.js -->
-      </div>
-
-      <div class="wg-code-label" style="margin-top:20px;margin-bottom:8px;">Python (Plotly choropleth)</div>
+    <!-- Code pane -->
+    <div class="wg-code-pane">
+      <div class="wg-code-label">Python (Plotly choropleth)</div>
       <div class="wg-code-block">
         <pre id="wg-map-code"></pre>
         <button class="wg-copy-btn" id="wg-copy-map-code">Copy code</button>

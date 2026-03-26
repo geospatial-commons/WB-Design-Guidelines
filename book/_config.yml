@@ -50,6 +50,7 @@ sphinx:
       - palette-picker.css
       - wb-gallery.css
     html_js_files:
+      - wb-palettes.js
       - custom.js
       - wb-utils.js
       - palette-picker.js
