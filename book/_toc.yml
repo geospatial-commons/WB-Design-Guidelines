@@ -2,8 +2,7 @@
 format: jb-book
 root: intro
 chapters:
-  - file: chapters/gallery
+  - file: chapters/chart-gallery
   - file: chapters/palettes
-  - file: chapters/chart-rules
-  - file: chapters/dashboard-ui
+  - file: chapters/dashboard-design
   - file: chapters/icons

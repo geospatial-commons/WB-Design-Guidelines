@@ -6,10 +6,9 @@ The single source of truth for building WB dashboards and data products. Interac
 
 | Task | Where to go |
 |------|-------------|
-| **See examples** of WB-styled charts and maps | {doc}`chapters/gallery` |
+| **See chart examples** and styling rules — axes, gridlines, legends, tooltips | {doc}`chapters/chart-gallery` |
 | **Pick a color palette** and copy code for Plotly, Matplotlib, or ggplot2 | {doc}`chapters/palettes` |
-| **Style a chart** — axes, gridlines, legends, tooltips, do's and don'ts | {doc}`chapters/chart-rules` |
-| **Build a dashboard** — UI colors, typography, layout, components | {doc}`chapters/dashboard-ui` |
+| **Build a dashboard** — colors, typography, layout, components, Power BI theme | {doc}`chapters/dashboard-design` |
 | **Get icons** — WB logos, scorecard icons, OCHA humanitarian icons | {doc}`chapters/icons` |
 
 ## Who is this for?
@@ -22,4 +21,4 @@ The single source of truth for building WB dashboards and data products. Interac
 
 ## Contact
 
-[TBD]
+Ryan Arias Delafosse — [rariasdelafosse@worldbank.org](mailto:rariasdelafosse@worldbank.org)

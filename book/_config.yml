@@ -45,6 +45,7 @@ sphinx:
     html_static_path:
       - _static
       - ../icons/scorecard
+      - ../icons/dashboard-ui
     html_css_files:
       - custom.css
       - palette-picker.css

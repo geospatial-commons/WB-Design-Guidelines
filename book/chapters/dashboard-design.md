@@ -1,10 +1,10 @@
-# Dashboard UI
+# Dashboard Design
 
 WB visual and interaction standards for digital dashboards and data products. Sourced from the WBG Digital Look & Feel Style Guide and adapted for front-end development.
 
 :::{admonition} Looking for data visualization palettes?
 :class: tip
-This page covers dashboard UI styling (colors, typography, layout, components). For data visualization palettes with copy-paste code snippets, see {doc}`palettes`.
+This page covers dashboard design (colors, typography, layout, components, Power BI theme). For data visualization palettes with copy-paste code snippets, see {doc}`palettes`.
 :::
 
 ---
@@ -490,6 +490,90 @@ Dashboard component patterns for WB data products.
 | KPI strip | Skeleton cards | Show "–" with tooltip | Last-known value + "stale data" label |
 | Data table | Skeleton rows | "No records in this period" | Retry button |
 | Chart | Skeleton | "No data" message | Inline error with retry |
+
+---
+
+## Power BI Theme
+
+The **WBG F1** Power BI theme applies WB-branded styling to all visuals automatically. Download the `.json` file and import it via Power BI Desktop: **View → Themes → Browse for themes**.
+
+**[Download powerbi_theme.json →](https://github.com/geospatial-commons/WB-Design-Guidelines/blob/main/powerbi_theme.json)**
+
+### Data Colors
+
+The theme defines 32 series colors used in order by Power BI visuals:
+
+```{raw} html
+<div style="display:flex; flex-wrap:wrap; gap:2px; margin:12px 0;">
+  <div class="wb-swatch" data-hex="#009FDA" style="background:#009FDA; width:40px; height:40px; border-radius:4px; cursor:pointer;" title="#009FDA"></div>
+  <div class="wb-swatch" data-hex="#E3B836" style="background:#E3B836; width:40px; height:40px; border-radius:4px; cursor:pointer;" title="#E3B836"></div>
+  <div class="wb-swatch" data-hex="#645DB5" style="background:#645DB5; width:40px; height:40px; border-radius:4px; cursor:pointer;" title="#645DB5"></div>
+  <div class="wb-swatch" data-hex="#66C4CA" style="background:#66C4CA; width:40px; height:40px; border-radius:4px; cursor:pointer;" title="#66C4CA"></div>
+  <div class="wb-swatch" data-hex="#F3734F" style="background:#F3734F; width:40px; height:40px; border-radius:4px; cursor:pointer;" title="#F3734F"></div>
+  <div class="wb-swatch" data-hex="#006068" style="background:#006068; width:40px; height:40px; border-radius:4px; cursor:pointer;" title="#006068"></div>
+  <div class="wb-swatch" data-hex="#33BC74" style="background:#33BC74; width:40px; height:40px; border-radius:4px; cursor:pointer;" title="#33BC74"></div>
+  <div class="wb-swatch" data-hex="#9F55A6" style="background:#9F55A6; width:40px; height:40px; border-radius:4px; cursor:pointer;" title="#9F55A6"></div>
+  <div class="wb-swatch" data-hex="#3599B8" style="background:#3599B8; width:40px; height:40px; border-radius:4px; cursor:pointer;" title="#3599B8"></div>
+  <div class="wb-swatch" data-hex="#DFBFBF" style="background:#DFBFBF; width:40px; height:40px; border-radius:4px; cursor:pointer;" title="#DFBFBF"></div>
+  <div class="wb-swatch" data-hex="#4AC5BB" style="background:#4AC5BB; width:40px; height:40px; border-radius:4px; cursor:pointer;" title="#4AC5BB"></div>
+  <div class="wb-swatch" data-hex="#5F6B6D" style="background:#5F6B6D; width:40px; height:40px; border-radius:4px; cursor:pointer;" title="#5F6B6D"></div>
+  <div class="wb-swatch" data-hex="#FB8281" style="background:#FB8281; width:40px; height:40px; border-radius:4px; cursor:pointer;" title="#FB8281"></div>
+  <div class="wb-swatch" data-hex="#F4D25A" style="background:#F4D25A; width:40px; height:40px; border-radius:4px; cursor:pointer;" title="#F4D25A"></div>
+  <div class="wb-swatch" data-hex="#7F898A" style="background:#7F898A; width:40px; height:40px; border-radius:4px; cursor:pointer;" title="#7F898A"></div>
+  <div class="wb-swatch" data-hex="#A4DDEE" style="background:#A4DDEE; width:40px; height:40px; border-radius:4px; cursor:pointer;" title="#A4DDEE"></div>
+  <div class="wb-swatch" data-hex="#FDAB89" style="background:#FDAB89; width:40px; height:40px; border-radius:4px; cursor:pointer;" title="#FDAB89"></div>
+  <div class="wb-swatch" data-hex="#B687AC" style="background:#B687AC; width:40px; height:40px; border-radius:4px; cursor:pointer;" title="#B687AC"></div>
+  <div class="wb-swatch" data-hex="#28738A" style="background:#28738A; width:40px; height:40px; border-radius:4px; cursor:pointer;" title="#28738A"></div>
+  <div class="wb-swatch" data-hex="#A78F8F" style="background:#A78F8F; width:40px; height:40px; border-radius:4px; cursor:pointer;" title="#A78F8F"></div>
+  <div class="wb-swatch" data-hex="#168980" style="background:#168980; width:40px; height:40px; border-radius:4px; cursor:pointer;" title="#168980"></div>
+  <div class="wb-swatch" data-hex="#293537" style="background:#293537; width:40px; height:40px; border-radius:4px; cursor:pointer;" title="#293537"></div>
+  <div class="wb-swatch" data-hex="#BB4A4A" style="background:#BB4A4A; width:40px; height:40px; border-radius:4px; cursor:pointer;" title="#BB4A4A"></div>
+  <div class="wb-swatch" data-hex="#B59525" style="background:#B59525; width:40px; height:40px; border-radius:4px; cursor:pointer;" title="#B59525"></div>
+  <div class="wb-swatch" data-hex="#475052" style="background:#475052; width:40px; height:40px; border-radius:4px; cursor:pointer;" title="#475052"></div>
+  <div class="wb-swatch" data-hex="#6A9FB0" style="background:#6A9FB0; width:40px; height:40px; border-radius:4px; cursor:pointer;" title="#6A9FB0"></div>
+  <div class="wb-swatch" data-hex="#BD7150" style="background:#BD7150; width:40px; height:40px; border-radius:4px; cursor:pointer;" title="#BD7150"></div>
+  <div class="wb-swatch" data-hex="#7B4F71" style="background:#7B4F71; width:40px; height:40px; border-radius:4px; cursor:pointer;" title="#7B4F71"></div>
+  <div class="wb-swatch" data-hex="#1B4D5C" style="background:#1B4D5C; width:40px; height:40px; border-radius:4px; cursor:pointer;" title="#1B4D5C"></div>
+  <div class="wb-swatch" data-hex="#706060" style="background:#706060; width:40px; height:40px; border-radius:4px; cursor:pointer;" title="#706060"></div>
+  <div class="wb-swatch" data-hex="#0F5C55" style="background:#0F5C55; width:40px; height:40px; border-radius:4px; cursor:pointer;" title="#0F5C55"></div>
+  <div class="wb-swatch" data-hex="#1C2325" style="background:#1C2325; width:40px; height:40px; border-radius:4px; cursor:pointer;" title="#1C2325"></div>
+</div>
+```
+
+Click any swatch to copy the hex code.
+
+### Text Classes
+
+| Class | Size | Font |
+|-------|------|------|
+| Callout | 38px | Segoe UI Semibold |
+| Title | 13px | Segoe UI Semibold |
+| Label | 10px | Segoe UI Semibold |
+| Header | 13px | Segoe UI |
+
+### Visual Defaults
+
+| Property | Value |
+|----------|-------|
+| Page background | `#EBEEF4` |
+| Visual background | White, no borders, 3px border-radius |
+| Foreground (primary) | `#212121` |
+| Foreground (secondary) | `#666666` |
+| Foreground (tertiary) | `#949494` |
+| Good / positive | `#33BC74` |
+| Bad / negative | `#EB1C2A` |
+| Gradient: minimum | `#FFF1D0` |
+| Gradient: center | `#6ED087` |
+| Gradient: maximum | `#009FDA` |
+| Tooltips | Dark (`#212121` background, white text) |
+
+### Per-Chart Overrides
+
+The theme includes specific axis and gridline styling for: scatter, clustered bar, line, clustered column, column, stacked column + line combo, bar, 100% stacked bar, waterfall, stacked area, and histogram charts. All use solid gridlines with `#000000` axis color and suppressed axis titles.
+
+Table and pivot table visuals use `#212121` for column headers and totals, with vertical grid enabled on pivots.
+
+---
 
 ### What NOT to Do
 

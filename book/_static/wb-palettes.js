@@ -20,12 +20,12 @@
       colorblindSafe: true,
       usage: 'Named groups in bar, line, or pie charts. Use colors in order; limit to 4 for clarity.',
       colors: [
-        { name: 'WB Navy',           hex: '#002244' },
-        { name: 'WB Blue',           hex: '#009FDA' },
-        { name: 'People Yellow',     hex: '#F7B841' },
-        { name: 'Prosperity Purple', hex: '#872C8F' },
-        { name: 'WB Teal',           hex: '#00A996' },
-        { name: 'Infrastructure Red',hex: '#91302F' }
+        { name: 'Navy',   hex: '#002244' },
+        { name: 'Blue',   hex: '#009FDA' },
+        { name: 'Yellow', hex: '#F7B841' },
+        { name: 'Purple', hex: '#872C8F' },
+        { name: 'Teal',   hex: '#00A996' },
+        { name: 'Red',    hex: '#91302F' }
       ]
     },
     {
@@ -50,8 +50,8 @@
       colorblindSafe: true,
       usage: 'Two-series charts requiring maximum contrast. Use WB Navy as the primary series.',
       colors: [
-        { name: 'WB Navy',       hex: '#002244' },
-        { name: 'People Yellow', hex: '#F7B841' }
+        { name: 'Navy',   hex: '#002244' },
+        { name: 'Yellow', hex: '#F7B841' }
       ]
     },
     {
